@@ -55,6 +55,17 @@ function cp(from, to) { fs.mkdirSync(path.dirname(to), { recursive: true }); fs.
 function writeFile(p, c) { fs.mkdirSync(path.dirname(p), { recursive: true }); fs.writeFileSync(p, c); }
 function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 
+// Tracking/verification tags injected into every <head>.
+// - GSC verification meta: cookieless.
+// - Cloudflare Web Analytics beacon: cookieless, no consent needed.
+// (GA4, if configured, is loaded by consent.js only after the visitor accepts.)
+function trackingTags() {
+  var out = '';
+  if (cfg.gscVerification) out += `\n<meta name="google-site-verification" content="${esc(cfg.gscVerification)}">`;
+  if (cfg.cfAnalyticsToken) out += `\n<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "${esc(cfg.cfAnalyticsToken)}"}'></script>`;
+  return out;
+}
+
 // --- page template ---
 function pageHTML(lang) {
   const t = i18n[lang];
@@ -139,6 +150,7 @@ ${hreflangs}
 <link rel="preload" href="/data/pokemon.json" as="fetch" crossorigin>
 <link rel="stylesheet" href="/assets/css/styles.css">
 <script type="application/ld+json">${JSON.stringify(ld)}</script>
+${trackingTags()}
 </head>
 <body>
 <header class="site-header">
@@ -222,7 +234,7 @@ ${hreflangs}
   </span>
 </div>
 
-<script>window.LANG=${JSON.stringify(lang)};window.DATA_BASE="/data/";window.ADSENSE_CLIENT=${JSON.stringify(cfg.adsenseClient || '')};window.I18N=${I18N_JSON};</script>
+<script>window.LANG=${JSON.stringify(lang)};window.DATA_BASE="/data/";window.ADSENSE_CLIENT=${JSON.stringify(cfg.adsenseClient || '')};window.GA4_ID=${JSON.stringify(cfg.ga4Id || '')};window.I18N=${I18N_JSON};</script>
 <script src="/assets/js/engine.js" defer></script>
 <script src="/assets/js/app.js" defer></script>
 <script src="/assets/js/consent.js" defer></script>
@@ -262,6 +274,7 @@ function legalHTML(lang) {
 <meta name="robots" content="index,follow">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/css/styles.css">
+${trackingTags()}
 </head>
 <body>
 <header class="site-header"><div class="wrap">
@@ -321,6 +334,7 @@ function clusterHead(lang, slugKey, pageMeta) {
 <meta name="theme-color" content="#0f1220">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/css/styles.css">
+${trackingTags()}
 </head>
 <body>
 <header class="site-header"><div class="wrap">
@@ -467,6 +481,7 @@ function rootHTML() {
     for(var i=0;i<langs.length;i++){var c=(langs[i]||'').slice(0,2).toLowerCase();if(m[c]){location.replace(m[c]);return;}}
   })();
 </script>
+${trackingTags()}
 </head>
 <body>
 <main class="wrap" style="padding:40px 16px;max-width:680px">

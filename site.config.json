@@ -7,5 +7,8 @@
   "regulation": "M-B",
   "contactEmail": "contacto@championsdamage.example",
   "lastUpdated": "2026-06-22",
-  "adsenseClient": ""
+  "adsenseClient": "",
+  "gscVerification": "",
+  "cfAnalyticsToken": "",
+  "ga4Id": ""
 }
