@@ -111,7 +111,7 @@
   },
   "nav": { "calculator": "Calculadora", "resources": "Recursos", "types": "Tabela de tipos", "natures": "Naturezas", "speed": "Speed tiers" },
   "consent": {
-    "text": "Usamos cookies para exibir anúncios e manter a ferramenta gratuita.",
+    "text": "Usamos cookies para analisar o tráfego e manter a ferramenta gratuita.",
     "accept": "Aceitar",
     "reject": "Recusar",
     "more": "Saiba mais"
