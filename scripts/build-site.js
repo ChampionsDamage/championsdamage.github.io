@@ -55,6 +55,18 @@ function cp(from, to) { fs.mkdirSync(path.dirname(to), { recursive: true }); fs.
 function writeFile(p, c) { fs.mkdirSync(path.dirname(p), { recursive: true }); fs.writeFileSync(p, c); }
 function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 
+// Minimal redirect page (for moved URLs): meta refresh + canonical + noindex + JS.
+function redirectStub(targetPath) {
+  const to = SITE + targetPath;
+  return `<!doctype html><html lang="es"><head><meta charset="utf-8">
+<title>ChampionsDamage</title>
+<link rel="canonical" href="${to}">
+<meta name="robots" content="noindex,follow">
+<meta http-equiv="refresh" content="0; url=${targetPath}">
+<script>location.replace(${JSON.stringify(targetPath)}+location.search+location.hash);</script>
+</head><body>→ <a href="${targetPath}">${to}</a></body></html>`;
+}
+
 // Tracking/verification tags injected into every <head>.
 // - GSC verification meta: cookieless.
 // - Cloudflare Web Analytics beacon: cookieless, no consent needed.
@@ -69,11 +81,11 @@ function trackingTags() {
 // --- page template ---
 function pageHTML(lang) {
   const t = i18n[lang];
-  const url = SITE + '/' + lang + '/' + t.slug + '/';
+  const url = SITE + '/' + lang + '/';
   const ogImg = SITE + '/assets/og/og-' + lang + '.png';
 
   const hreflangs = cfg.languages.map((l) =>
-    `<link rel="alternate" hreflang="${i18n[l].hreflang}" href="${SITE}/${l}/${i18n[l].slug}/">`
+    `<link rel="alternate" hreflang="${i18n[l].hreflang}" href="${SITE}/${l}/">`
   ).join('\n  ');
 
   // JSON-LD: WebApplication + FAQPage + Breadcrumb
@@ -110,7 +122,7 @@ function pageHTML(lang) {
 
   // language switcher links
   const langMenu = cfg.languages.map((l) =>
-    `<a href="/${l}/${i18n[l].slug}/" hreflang="${i18n[l].hreflang}"${l===lang?' aria-current="true"':''}>${i18n[l].name}</a>`
+    `<a href="/${l}/" hreflang="${i18n[l].hreflang}"${l===lang?' aria-current="true"':''}>${i18n[l].name}</a>`
   ).join('');
 
   // content: faq + glossary
@@ -155,7 +167,7 @@ ${trackingTags()}
 <body>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="/${lang}/${t.slug}/"><span class="dot"></span> <span>Champions<b>Damage</b></span></a>
+    <a class="brand" href="/${lang}/"><span class="dot"></span> <span>Champions<b>Damage</b></span></a>
     <div class="lang">
       <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">🌐 ${i18n[lang].name} ▾</button>
       <nav class="lang-menu" id="langMenu" aria-label="${esc(t.footer.langLabel)}">${langMenu}</nav>
@@ -163,7 +175,7 @@ ${trackingTags()}
   </div>
 </header>
 <nav class="subnav"><div class="wrap">
-  <a href="/${lang}/${t.slug}/" aria-current="true">${esc(t.nav.calculator)}</a>${resourcesNav(lang)}
+  <a href="/${lang}/" aria-current="true">${esc(t.nav.calculator)}</a>${resourcesNav(lang)}
 </div></nav>
 
 <main class="wrap">
@@ -278,11 +290,11 @@ ${trackingTags()}
 </head>
 <body>
 <header class="site-header"><div class="wrap">
-  <a class="brand" href="/${lang}/${t.slug}/"><span class="dot"></span> <span>Champions<b>Damage</b></span></a>
+  <a class="brand" href="/${lang}/"><span class="dot"></span> <span>Champions<b>Damage</b></span></a>
   <div class="lang"><nav class="lang-menu open" style="position:static;display:flex;gap:6px;background:transparent;border:0;box-shadow:none;padding:0">${langMenu}</nav></div>
 </div></header>
 <main class="wrap content" style="max-width:760px">
-  <p><a href="/${lang}/${t.slug}/">← ${esc(t.h1)}</a></p>
+  <p><a href="/${lang}/">← ${esc(t.h1)}</a></p>
   <h1>${esc(lg.title)}</h1>
   <p class="muted">${esc(lg.updatedLabel)}: ${esc(cfg.lastUpdated)}</p>
   ${sections}
@@ -291,7 +303,7 @@ ${trackingTags()}
 </main>
 <footer class="site-footer"><div class="wrap">
   <p class="muted">${esc(t.footer.disclaimer)}</p>
-  <p><a href="/${lang}/${t.slug}/">${esc(t.h1)}</a></p>
+  <p><a href="/${lang}/">${esc(t.h1)}</a></p>
 </div></footer>
 </body>
 </html>`;
@@ -338,18 +350,18 @@ ${trackingTags()}
 </head>
 <body>
 <header class="site-header"><div class="wrap">
-  <a class="brand" href="/${lang}/${t.slug}/"><span class="dot"></span> <span>Champions<b>Damage</b></span></a>
+  <a class="brand" href="/${lang}/"><span class="dot"></span> <span>Champions<b>Damage</b></span></a>
   <div class="lang"><button class="lang-btn" id="langBtn">🌐 ${t.name} ▾</button>
   <nav class="lang-menu" id="langMenu">${langMenu}</nav></div>
 </div></header>
 <nav class="subnav"><div class="wrap">
-  <a href="/${lang}/${t.slug}/">${esc(t.nav.calculator)}</a>${resourcesNav(lang)}
+  <a href="/${lang}/">${esc(t.nav.calculator)}</a>${resourcesNav(lang)}
 </div></nav>`;
 }
 
 function clusterFoot(lang, pageMeta) {
   const t = i18n[lang];
-  return `<p style="margin-top:24px"><a class="btn primary" href="/${lang}/${t.slug}/">${esc(pageMeta.back)} →</a></p>
+  return `<p style="margin-top:24px"><a class="btn primary" href="/${lang}/">${esc(pageMeta.back)} →</a></p>
 </main>
 <footer class="site-footer"><div class="wrap">
   <p class="muted">${esc(t.footer.disclaimer)}</p>
@@ -456,13 +468,13 @@ ${body}
 // --- root language picker ---
 function rootHTML() {
   const links = cfg.languages.map((l) =>
-    `<a href="/${l}/${i18n[l].slug}/" hreflang="${i18n[l].hreflang}">${i18n[l].name} — ${esc(i18n[l].h1)}</a>`
+    `<a href="/${l}/" hreflang="${i18n[l].hreflang}">${i18n[l].name} — ${esc(i18n[l].h1)}</a>`
   ).join('\n  ');
   const hreflangs = cfg.languages.map((l) =>
-    `<link rel="alternate" hreflang="${i18n[l].hreflang}" href="${SITE}/${l}/${i18n[l].slug}/">`
+    `<link rel="alternate" hreflang="${i18n[l].hreflang}" href="${SITE}/${l}/">`
   ).join('\n  ') + `\n  <link rel="alternate" hreflang="x-default" href="${SITE}/">`;
   const map = {};
-  cfg.languages.forEach((l) => { map[i18n[l].hreflang.split('-')[0]] = '/' + l + '/' + i18n[l].slug + '/'; });
+  cfg.languages.forEach((l) => { map[i18n[l].hreflang.split('-')[0]] = '/' + l + '/'; });
   return `<!doctype html>
 <html lang="${cfg.defaultLang}">
 <head>
@@ -505,7 +517,7 @@ function urlEntry(loc, altsFor) {
   return `  <url>\n    <loc>${loc}</loc>\n${alts}\n    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}/"/>\n    <changefreq>weekly</changefreq>\n  </url>`;
 }
 function sitemap() {
-  const calcSlug = (l) => SITE + '/' + l + '/' + i18n[l].slug + '/';
+  const calcSlug = (l) => SITE + '/' + l + '/';
   const legalSlug = (l) => SITE + '/' + l + '/' + legal[l].slug + '/';
   const entries = [];
   entries.push(`  <url>\n    <loc>${SITE}/</loc>\n    <changefreq>weekly</changefreq>\n  </url>`);
@@ -540,8 +552,12 @@ rmrf(DIST);
 
 // pages
 cfg.languages.forEach((l) => {
-  writeFile(path.join(DIST, l, i18n[l].slug, 'index.html'), pageHTML(l));
-  console.log('  /' + l + '/' + i18n[l].slug + '/');
+  writeFile(path.join(DIST, l, 'index.html'), pageHTML(l));
+  console.log('  /' + l + '/');
+  // legacy redirect: old descriptive calc slug -> /<lang>/
+  if (i18n[l].slug) {
+    writeFile(path.join(DIST, l, i18n[l].slug, 'index.html'), redirectStub('/' + l + '/'));
+  }
   writeFile(path.join(DIST, l, legal[l].slug, 'index.html'), legalHTML(l));
   console.log('  /' + l + '/' + legal[l].slug + '/');
   writeFile(path.join(DIST, l, i18n[l].cluster.types.slug, 'index.html'), typeChartHTML(l));
