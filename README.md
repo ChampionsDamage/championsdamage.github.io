@@ -88,15 +88,22 @@ aún puede evolucionar se excluye). Es una aproximación al roster legal.
       todo (Dracaufeu, Séisme); ES/IT localizan movimientos/objetos/tipos y mantienen
       los nombres de Pokémon en inglés (que es lo oficial); PT añade tipos en PT-BR.
       Regenera con `npm run build:names`. La búsqueda acepta nombre nativo e inglés.
-- [x] **Páginas de clúster** tabla de tipos (`/<l>/tabla-de-tipos`…) y naturalezas
-      (`/<l>/naturalezas`…) en los 4 idiomas, enlazadas en el subnav y el sitemap.
+- [x] **Páginas de clúster** en los 4 idiomas, enlazadas en el subnav y el sitemap:
+      tabla de tipos, **speed tiers** (velocidad de todo el roster a nivel 50) y
+      naturalezas. Sitemap = 21 URLs.
 - [x] **Banner de consentimiento + carga diferida de AdSense**: rellena
       `adsenseClient` en `site.config.json`. Si está vacío, **no** se carga ningún
       script ni cookie y el banner no aparece (estado actual, 100 % cookie-free).
-- [ ] **Lista exacta de legalidad de Reg M-B** (las 233 especies / 76 Megas). Sigue
-      usándose la aproximación «formas finales» (flag `evo`); no se incluye una lista
-      «exacta» inventada — falta una fuente pública en JSON fiable para clavarla.
-- [ ] Página de *speed tiers* (velocidad por roster) — siguiente clúster sugerido.
+- [x] **Roster exacto de Reg M-B** parseado del wikitext de Bulbapedia
+      (`src/data/raw/champions-roster.wiki` → `scripts/build-regulations.js` →
+      `data/regulations.json`): **298 formas** del juego mapeadas a datos reales de
+      Showdown (208 especies + 76 Megas + formas regionales; 1 mega exclusiva de
+      Champions sin datos en Showdown queda fuera). El filtro «Solo Champions» usa
+      esta lista y es el modo por defecto. Para actualizar de regulación: vuelve a
+      bajar el wikitext y corre `npm run build:regulations`.
+
+Nota: `pokemon.json` ahora incluye especies «Past» (Beedrill, Megas…) que Showdown
+marca como ilegales en SV pero que SÍ están en Champions con stats base válidas.
 
 ## Aviso
 

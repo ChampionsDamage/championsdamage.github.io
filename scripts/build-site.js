@@ -23,12 +23,27 @@ cfg.languages.forEach((l) => {
   try { names[l] = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'names-' + l + '.json'), 'utf8')); }
   catch (e) { names[l] = {}; }
 });
+const engine = require(path.join(SRC, 'assets', 'js', 'engine.js'));
 const D = {
   typechart: JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'typechart.json'), 'utf8')),
   natures: JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'natures.json'), 'utf8')),
-  meta: JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'meta.json'), 'utf8'))
+  meta: JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'meta.json'), 'utf8')),
+  pokemon: JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'pokemon.json'), 'utf8')),
+  regulations: JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'regulations.json'), 'utf8'))
 };
 function localType(l, t) { return (names[l] && names[l].type && names[l].type[t.toLowerCase()]) || t; }
+function localPkmn(l, p) {
+  var nm = names[l] && names[l].pokemon;
+  if (nm) {
+    var key = p.name.toLowerCase().replace(/[^a-z0-9]+/g, '');
+    if (nm[key]) return nm[key];
+    if (p.baseSpecies && p.baseSpecies !== p.name) {
+      var bk = p.baseSpecies.toLowerCase().replace(/[^a-z0-9]+/g, '');
+      if (nm[bk]) return p.name.replace(p.baseSpecies, nm[bk]);
+    }
+  }
+  return p.name;
+}
 function localNature(l, id) {
   var n = names[l] && names[l].nature && names[l].nature[id.toLowerCase()];
   return n || (id.charAt(0).toUpperCase() + id.slice(1));
@@ -275,6 +290,7 @@ const TYPE_COLORS = { Normal:'#9099a1',Fire:'#ff6b3d',Water:'#4d8fef',Electric:'
 function resourcesNav(lang) {
   const t = i18n[lang];
   return `<a href="/${lang}/${t.cluster.types.slug}/">${esc(t.nav.types)}</a>` +
+         `<a href="/${lang}/${t.cluster.speed.slug}/">${esc(t.nav.speed)}</a>` +
          `<a href="/${lang}/${t.cluster.natures.slug}/">${esc(t.nav.natures)}</a>`;
 }
 
@@ -391,6 +407,38 @@ ${rows}
 ` + clusterFoot(lang, m);
 }
 
+// Speed tiers page
+function speedTiersHTML(lang) {
+  const t = i18n[lang];
+  const m = t.cluster.speed;
+  const reg = D.regulations.regulations[D.regulations.current];
+  const ids = (reg && reg.roster) ? reg.roster : Object.keys(D.pokemon);
+  const rows = ids.map((id) => D.pokemon[id]).filter(Boolean).map((p) => {
+    const base = p.base.spe;
+    const neutral = engine.calcStat(base, 32, null);
+    const positive = engine.calcStat(base, 32, 'plus');
+    return { p: p, base: base, neutral: neutral, positive: positive };
+  }).sort((a, b) => b.positive - a.positive || b.base - a.base);
+  const body = rows.map((r) => {
+    const pills = r.p.types.map((ty) =>
+      `<span class="type" style="background:${TYPE_COLORS[ty]}">${esc(localType(lang, ty).slice(0,3))}</span>`).join('');
+    return `<tr><td><b>${esc(localPkmn(lang, r.p))}</b> ${pills}</td><td>${r.base}</td><td>${r.neutral}</td><td class="up">${r.positive}</td></tr>`;
+  }).join('\n');
+  return clusterHead(lang, 'speed', m) + `
+<main class="wrap content">
+  <h1>${esc(m.h1)}</h1>
+  <p>${m.intro}</p>
+  <div class="chart-wrap">
+  <table class="natures speedtiers">
+    <thead><tr><th>${esc(m.colPokemon)}</th><th>${esc(m.colBase)}</th><th>${esc(m.colNeutral)}</th><th>${esc(m.colPositive)}</th></tr></thead>
+    <tbody>
+${body}
+    </tbody>
+  </table>
+  </div>
+` + clusterFoot(lang, m);
+}
+
 // --- root language picker ---
 function rootHTML() {
   const links = cfg.languages.map((l) =>
@@ -447,9 +495,11 @@ function sitemap() {
   const entries = [];
   entries.push(`  <url>\n    <loc>${SITE}/</loc>\n    <changefreq>weekly</changefreq>\n  </url>`);
   const typesSlug = (l) => SITE + '/' + l + '/' + i18n[l].cluster.types.slug + '/';
+  const speedSlug = (l) => SITE + '/' + l + '/' + i18n[l].cluster.speed.slug + '/';
   const naturesSlug = (l) => SITE + '/' + l + '/' + i18n[l].cluster.natures.slug + '/';
   cfg.languages.forEach((l) => entries.push(urlEntry(calcSlug(l), calcSlug)));
   cfg.languages.forEach((l) => entries.push(urlEntry(typesSlug(l), typesSlug)));
+  cfg.languages.forEach((l) => entries.push(urlEntry(speedSlug(l), speedSlug)));
   cfg.languages.forEach((l) => entries.push(urlEntry(naturesSlug(l), naturesSlug)));
   cfg.languages.forEach((l) => entries.push(urlEntry(legalSlug(l), legalSlug)));
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${entries.join('\n')}\n</urlset>\n`;
@@ -481,7 +531,8 @@ cfg.languages.forEach((l) => {
   console.log('  /' + l + '/' + legal[l].slug + '/');
   writeFile(path.join(DIST, l, i18n[l].cluster.types.slug, 'index.html'), typeChartHTML(l));
   writeFile(path.join(DIST, l, i18n[l].cluster.natures.slug, 'index.html'), naturesHTML(l));
-  console.log('  /' + l + '/' + i18n[l].cluster.types.slug + '/  +  /' + l + '/' + i18n[l].cluster.natures.slug + '/');
+  writeFile(path.join(DIST, l, i18n[l].cluster.speed.slug, 'index.html'), speedTiersHTML(l));
+  console.log('  /' + l + '/{' + i18n[l].cluster.types.slug + ',' + i18n[l].cluster.speed.slug + ',' + i18n[l].cluster.natures.slug + '}/');
 });
 writeFile(path.join(DIST, 'index.html'), rootHTML());
 

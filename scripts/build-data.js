@@ -53,10 +53,11 @@ function buildPokemon() {
     const p = dex[id];
     if (!p.num || p.num < 1) continue;                 // skip missingno/CAP-negatives
     if (p.isNonstandard === 'CAP' || p.isNonstandard === 'Custom') continue;
-    if (p.tier === 'Illegal') continue;
-    // skip purely cosmetic formes (no stat/type change) to keep list clean
-    if (p.cosmeticFormes) { /* base keeps formes */ }
-    if (/-(Gmax|Totem|Starter)$/.test(p.name)) continue;
+    // NOTE: do NOT filter tier==='Illegal' / isNonstandard==='Past'. Showdown flags
+    // pre-Gen-9 species (Beedrill, Pidgeot, Mega Evolutions…) that way because they
+    // aren't in Scarlet/Violet, but many ARE in Pokémon Champions and their base
+    // stats are valid. Legality is defined separately in data/regulations.json.
+    if (/-(Gmax|Totem|Starter)$/.test(p.name)) continue;   // cosmetic / irrelevant formes
     out[id] = {
       id: id,
       num: p.num,

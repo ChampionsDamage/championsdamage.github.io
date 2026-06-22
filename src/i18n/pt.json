@@ -51,7 +51,7 @@
     "swap": "Trocar atacante e defensor",
     "reset": "Reiniciar",
     "showAll": "Todos os Pokémon",
-    "championsOnly": "Só Champions (formas finais)",
+    "championsOnly": "Só Champions (Reg M-B)",
     "noDamage": "Este golpe não causa dano.",
     "immune": "O defensor é imune a este golpe."
   },
@@ -109,7 +109,7 @@
     "data": "Dados: roster e mecânicas da regulação vigente.",
     "langLabel": "Idioma"
   },
-  "nav": { "calculator": "Calculadora", "resources": "Recursos", "types": "Tabela de tipos", "natures": "Naturezas" },
+  "nav": { "calculator": "Calculadora", "resources": "Recursos", "types": "Tabela de tipos", "natures": "Naturezas", "speed": "Speed tiers" },
   "consent": {
     "text": "Usamos cookies para exibir anúncios e manter a ferramenta gratuita.",
     "accept": "Aceitar",
@@ -133,6 +133,15 @@
       "h1": "Naturezas de Pokémon",
       "intro": "Cada <strong>natureza</strong> aumenta um atributo em 10 % e reduz outro em 10 % (as naturezas neutras não mudam nada). Escolher bem a natureza é essencial para maximizar dano ou velocidade. Veja a tabela completa.",
       "colNature": "Natureza", "colRaises": "Aumenta (+10 %)", "colLowers": "Reduz (−10 %)", "neutral": "Neutra",
+      "back": "Abrir a calculadora de dano"
+    },
+    "speed": {
+      "slug": "tiers-de-velocidade",
+      "title": "Speed Tiers de Pokémon Champions | Tabela de Velocidade VGC",
+      "description": "Tabela de speed tiers de Pokémon Champions: velocidade no nível 50 de cada Pokémon do roster, com distribuição neutra e máxima. Veja quem ataca primeiro no VGC.",
+      "h1": "Speed tiers de Pokémon Champions",
+      "intro": "Quem ataca primeiro? Esta é a <strong>tabela de velocidade (speed tiers)</strong> do roster de Champions no nível 50: a Velocidade base, a máxima com natureza neutra (32 SP) e a máxima com natureza positiva (32 SP, +10 %). Ordenada do mais rápido ao mais lento.",
+      "colPokemon": "Pokémon", "colBase": "Base", "colNeutral": "Máx. neutra", "colPositive": "Máx. +natureza",
       "back": "Abrir a calculadora de dano"
     }
   }

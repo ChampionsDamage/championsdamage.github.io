@@ -1,0 +1,920 @@
+This is a list of Pokémon that are available in [[Pokémon Champions]]. 208 Pokémon species are available in the game, as well as 76 [[Mega Evolution]]s.
+
+Functionally distinct, permanent [[form]]s (such as [[regional form]]s) are listed alongside the base forms of their respective species, while other forms (such as [[Mega Evolution]]s) are listed in separate sections below.
+
+Until September 2, 2026, the current roster is Regular Roster M-B. Pokémon not in the current roster cannot be obtained without the use of events or [[transfer]]ring them from another game.
+
+==List of Pokémon in Champions==
+Eternal Flower Floette is allowed under the current regulation, but it must be transferred from {{pkmn|Legends: Z-A}} through {{pkmn|HOME}}.
+{{gdexh/Champs}}
+{{gdex/Champs|0003|Venusaur|2|Grass|Poison|Yes|1.0.2}}
+{{gdex/Champs|0006|Charizard|2|Fire|Flying|Yes|1.0.2}}
+{{gdex/Champs|0009|Blastoise|1|Water|Yes|1.0.2}}
+{{gdex/Champs|0015|Beedrill|2|Bug|Poison|Yes|1.0.2}}
+{{gdex/Champs|0018|Pidgeot|2|Normal|Flying|Yes|1.0.2}}
+{{gdex/Champs|0024|Arbok|1|Poison|Yes|1.0.2}}
+{{gdex/Champs|0025|Pikachu|1|Electric|Yes|1.0.2}}
+|- style="background:#FFF"
+| rowspan="2" style="font-family:monospace,monospace" | #0026
+! {{MSP/Champs|0026|Raichu}}
+| {{p|Raichu}}
+{{typetable|Electric|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0026|Raichu|form=-Alola}}
+| {{p|Raichu}}<br><small>Alolan Form</small>
+{{typetable|Electric}}{{typetable|Psychic}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+{{gdex/Champs|0036|Clefable|1|Fairy|Yes|1.0.2}}
+|- style="background:#FFF"
+| rowspan="2" style="font-family:monospace,monospace" | #0038
+! {{MSP/Champs|0038|Ninetales}}
+| {{p|Ninetales}}
+{{typetable|Fire|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0038|Ninetales|form=-Alola}}
+| {{p|Ninetales}}<br><small>Alolan Form</small>
+{{typetable|Ice}}{{typetable|Fairy}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+{{gdex/Champs|0045|Vileplume|2|Grass|Poison|Yes|1.1.0}}
+|- style="background:#FFF"
+| rowspan="2" style="font-family:monospace,monospace" | #0059
+! {{MSP/Champs|0059|Arcanine}}
+| {{p|Arcanine}}
+{{typetable|Fire|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0059|Arcanine|form=-Hisui}}
+| {{p|Arcanine}}<br><small>Hisuian Form</small>
+{{typetable|Fire}}{{typetable|Rock}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+{{gdex/Champs|0065|Alakazam|1|Psychic|Yes|1.0.2}}
+{{gdex/Champs|0068|Machamp|1|Fighting|Yes|1.0.2}}
+{{gdex/Champs|0071|Victreebel|2|Grass|Poison|Yes|1.0.2}}
+|- style="background:#FFF"
+| rowspan="2" style="font-family:monospace,monospace" | #0080
+! {{MSP/Champs|0080|Slowbro}}
+| {{p|Slowbro}}
+{{typetable|Water}}{{typetable|Psychic}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0080|Slowbro|form=-Galar}}
+| {{p|Slowbro}}<br><small>Galarian Form</small>
+{{typetable|Poison}}{{typetable|Psychic}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+{{gdex/Champs|0094|Gengar|2|Ghost|Poison|Yes|1.0.2}}
+{{gdex/Champs|0115|Kangaskhan|1|Normal|Yes|1.0.2}}
+{{gdex/Champs|0121|Starmie|2|Water|Psychic|Yes|1.0.2}}
+{{gdex/Champs|0127|Pinsir|1|Bug|Yes|1.0.2}}
+|- style="background:#FFF"
+| rowspan="4" style="font-family:monospace,monospace" | #0128
+! {{MSP/Champs|0128|Tauros}}
+| {{p|Tauros}}
+{{typetable|Normal|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0128|Tauros|form=-Paldea Combat}}
+| {{p|Tauros}}<br><small>Paldean Form<br>Combat Breed</small>
+{{typetable|Fighting|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0128|Tauros|form=-Paldea Blaze}}
+| {{p|Tauros}}<br><small>Paldean Form<br>Blaze Breed</small>
+{{typetable|Fighting}}{{typetable|Fire}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0128|Tauros|form=-Paldea Aqua}}
+| {{p|Tauros}}<br><small>Paldean Form<br>Aqua Breed</small>
+{{typetable|Fighting}}{{typetable|Water}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+{{gdex/Champs|0130|Gyarados|2|Water|Flying|Yes|1.0.2}}
+{{gdex/Champs|0132|Ditto|1|Normal|Yes|1.0.2}}
+{{gdex/Champs|0134|Vaporeon|1|Water|Yes|1.0.2}}
+{{gdex/Champs|0135|Jolteon|1|Electric|Yes|1.0.2}}
+{{gdex/Champs|0136|Flareon|1|Fire|Yes|1.0.2}}
+{{gdex/Champs|0142|Aerodactyl|2|Rock|Flying|Yes|1.0.2}}
+{{gdex/Champs|0143|Snorlax|1|Normal|Yes|1.0.2}}
+{{gdex/Champs|0149|Dragonite|2|Dragon|Flying|Yes|1.0.2}}
+{{gdex/Champs|0154|Meganium|1|Grass|Yes|1.0.2}}
+|- style="background:#FFF"
+| rowspan="2" style="font-family:monospace,monospace" | #0157
+! {{MSP/Champs|0157|Typhlosion}}
+| {{p|Typhlosion}}
+{{typetable|Fire|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0157|Typhlosion|form=-Hisui}}
+| {{p|Typhlosion}}<br><small>Hisuian Form</small>
+{{typetable|Fire}}{{typetable|Ghost}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+{{gdex/Champs|0160|Feraligatr|1|Water|Yes|1.0.2}}
+{{gdex/Champs|0168|Ariados|2|Bug|Poison|Yes|1.0.2}}
+{{gdex/Champs|0181|Ampharos|1|Electric|Yes|1.0.2}}
+{{gdex/Champs|0184|Azumarill|2|Water|Fairy|Yes|1.0.2}}
+{{gdex/Champs|0186|Politoed|1|Water|Yes|1.0.2}}
+{{gdex/Champs|0196|Espeon|1|Psychic|Yes|1.0.2}}
+{{gdex/Champs|0197|Umbreon|1|Dark|Yes|1.0.2}}
+|- style="background:#FFF"
+| rowspan="2" style="font-family:monospace,monospace" | #0199
+! {{MSP/Champs|0199|Slowking}}
+| {{p|Slowking}}
+{{typetable|Water}}{{typetable|Psychic}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0199|Slowking|form=-Galar}}
+| {{p|Slowking}}<br><small>Galarian Form</small>
+{{typetable|Poison}}{{typetable|Psychic}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+{{gdex/Champs|0205|Forretress|2|Bug|Steel|Yes|1.0.2}}
+{{gdex/Champs|0208|Steelix|2|Steel|Ground|Yes|1.0.2}}
+{{gdex/Champs|0211|Qwilfish|2|Water|Poison|Yes|1.1.0}}
+{{gdex/Champs|0212|Scizor|2|Bug|Steel|Yes|1.0.2}}
+{{gdex/Champs|0214|Heracross|2|Bug|Fighting|Yes|1.0.2}}
+{{gdex/Champs|0227|Skarmory|2|Steel|Flying|Yes|1.0.2}}
+{{gdex/Champs|0229|Houndoom|2|Dark|Fire|Yes|1.0.2}}
+{{gdex/Champs|0248|Tyranitar|2|Rock|Dark|Yes|1.0.2}}
+{{gdex/Champs|0254|Sceptile|1|Grass|Yes|1.1.0}}
+{{gdex/Champs|0257|Blaziken|2|Fire|Fighting|Yes|1.1.0}}
+{{gdex/Champs|0260|Swampert|2|Water|Ground|Yes|1.1.0}}
+{{gdex/Champs|0279|Pelipper|2|Water|Flying|Yes|1.0.2}}
+{{gdex/Champs|0282|Gardevoir|2|Psychic|Fairy|Yes|1.0.2}}
+{{gdex/Champs|0302|Sableye|2|Dark|Ghost|Yes|1.0.2}}
+{{gdex/Champs|0303|Mawile|2|Steel|Fairy|Yes|1.1.0}}
+{{gdex/Champs|0306|Aggron|2|Steel|Rock|Yes|1.0.2}}
+{{gdex/Champs|0308|Medicham|2|Fighting|Psychic|Yes|1.0.2}}
+{{gdex/Champs|0310|Manectric|1|Electric|Yes|1.0.2}}
+{{gdex/Champs|0319|Sharpedo|2|Water|Dark|Yes|1.0.2}}
+{{gdex/Champs|0323|Camerupt|2|Fire|Ground|Yes|1.0.2}}
+{{gdex/Champs|0324|Torkoal|1|Fire|Yes|1.0.2}}
+{{gdex/Champs|0334|Altaria|2|Dragon|Flying|Yes|1.0.2}}
+{{gdex/Champs|0350|Milotic|1|Water|Yes|1.0.2}}
+{{gdex/Champs|0351|Castform|1|Normal|Yes|1.0.2}}
+{{gdex/Champs|0354|Banette|1|Ghost|Yes|1.0.2}}
+{{gdex/Champs|0358|Chimecho|1|Psychic|Yes|1.0.2}}
+{{gdex/Champs|0359|Absol|1|Dark|Yes|1.0.2}}
+{{gdex/Champs|0362|Glalie|1|Ice|Yes|1.0.2}}
+{{gdex/Champs|0376|Metagross|2|Steel|Psychic|Yes|1.1.0}}
+{{gdex/Champs|0389|Torterra|2|Grass|Ground|Yes|1.0.2}}
+{{gdex/Champs|0392|Infernape|2|Fire|Fighting|Yes|1.0.2}}
+{{gdex/Champs|0395|Empoleon|2|Water|Steel|Yes|1.0.2}}
+{{gdex/Champs|0398|Staraptor|2|Normal|Flying|Yes|1.1.0}}
+{{gdex/Champs|0405|Luxray|1|Electric|Yes|1.0.2}}
+{{gdex/Champs|0407|Roserade|2|Grass|Poison|Yes|1.0.2}}
+{{gdex/Champs|0409|Rampardos|1|Rock|Yes|1.0.2}}
+{{gdex/Champs|0411|Bastiodon|2|Rock|Steel|Yes|1.0.2}}
+{{gdex/Champs|0428|Lopunny|1|Normal|Yes|1.0.2}}
+{{gdex/Champs|0442|Spiritomb|2|Ghost|Dark|Yes|1.0.2}}
+{{gdex/Champs|0445|Garchomp|2|Dragon|Ground|Yes|1.0.2}}
+{{gdex/Champs|0448|Lucario|2|Fighting|Steel|Yes|1.0.2}}
+{{gdex/Champs|0450|Hippowdon|1|Ground|Yes|1.0.2}}
+{{gdex/Champs|0454|Toxicroak|2|Poison|Fighting|Yes|1.0.2}}
+{{gdex/Champs|0460|Abomasnow|2|Grass|Ice|Yes|1.0.2}}
+{{gdex/Champs|0461|Weavile|2|Dark|Ice|Yes|1.0.2}}
+{{gdex/Champs|0464|Rhyperior|2|Ground|Rock|Yes|1.0.2}}
+{{gdex/Champs|0470|Leafeon|1|Grass|Yes|1.0.2}}
+{{gdex/Champs|0471|Glaceon|1|Ice|Yes|1.0.2}}
+{{gdex/Champs|0472|Gliscor|2|Ground|Flying|Yes|1.0.2}}
+{{gdex/Champs|0473|Mamoswine|2|Ice|Ground|Yes|1.0.2}}
+{{gdex/Champs|0475|Gallade|2|Psychic|Fighting|Yes|1.0.2}}
+{{gdex/Champs|0478|Froslass|2|Ice|Ghost|Yes|1.0.2}}
+{{gdex/Champs|0479|Rotom|2|Electric|Ghost|Yes|1.0.2}}
+|- style="background:#FFF"
+{{gdex/Champs|0497|Serperior|1|Grass|Yes|1.0.2}}
+{{gdex/Champs|0500|Emboar|2|Fire|Fighting|Yes|1.0.2}}
+|- style="background:#FFF"
+| rowspan="2" style="font-family:monospace,monospace" | #0503
+! {{MSP/Champs|0503|Samurott}}
+| {{p|Samurott}}
+{{typetable|Water|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0503|Samurott|form=-Hisui}}
+| {{p|Samurott}}<br><small>Hisuian Form</small>
+{{typetable|Water}}{{typetable|Dark}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+{{gdex/Champs|0505|Watchog|1|Normal|Yes|1.0.2}}
+{{gdex/Champs|0510|Liepard|1|Dark|Yes|1.0.2}}
+{{gdex/Champs|0512|Simisage|1|Grass|Yes|1.0.2}}
+{{gdex/Champs|0514|Simisear|1|Fire|Yes|1.0.2}}
+{{gdex/Champs|0516|Simipour|1|Water|Yes|1.0.2}}
+{{gdex/Champs|0518|Musharna|1|Psychic|Yes|1.1.0}}
+{{gdex/Champs|0530|Excadrill|2|Ground|Steel|Yes|1.0.2}}
+{{gdex/Champs|0531|Audino|1|Normal|Yes|1.0.2}}
+{{gdex/Champs|0534|Conkeldurr|1|Fighting|Yes|1.0.2}}
+{{gdex/Champs|0545|Scolipede|2|Bug|Poison|Yes|1.1.0}}
+{{gdex/Champs|0547|Whimsicott|2|Grass|Fairy|Yes|1.0.2}}
+{{gdex/Champs|0553|Krookodile|2|Ground|Dark|Yes|1.0.2}}
+{{gdex/Champs|0560|Scrafty|2|Dark|Fighting|Yes|1.1.0}}
+{{gdex/Champs|0563|Cofagrigus|1|Ghost|Yes|1.0.2}}
+{{gdex/Champs|0569|Garbodor|1|Poison|Yes|1.0.2}}
+|- style="background:#FFF"
+| rowspan="2" style="font-family:monospace,monospace" | #0571
+! {{MSP/Champs|0571|Zoroark}}
+| {{p|Zoroark}}
+{{typetable|Dark|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0571|Zoroark|form=-Hisui}}
+| {{p|Zoroark}}<br><small>Hisuian Form</small>
+{{typetable|Normal}}{{typetable|Ghost}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+{{gdex/Champs|0579|Reuniclus|1|Psychic|Yes|1.0.2}}
+{{gdex/Champs|0584|Vanilluxe|1|Ice|Yes|1.0.2}}
+{{gdex/Champs|0587|Emolga|2|Electric|Flying|Yes|1.0.2}}
+{{gdex/Champs|0604|Eelektross|1|Electric|Yes|1.1.0}}
+{{gdex/Champs|0609|Chandelure|2|Ghost|Fire|Yes|1.0.2}}
+{{gdex/Champs|0614|Beartic|1|Ice|Yes|1.0.2}}
+|- style="background:#FFF"
+| rowspan="2" style="font-family:monospace,monospace" | #0618
+! {{MSP/Champs|0618|Stunfisk}}
+| {{p|Stunfisk}}
+{{typetable|Ground}}{{typetable|Electric}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0618|Stunfisk|form=-Galar}}
+| {{p|Stunfisk}}<br><small>Galarian Form</small>
+{{typetable|Ground}}{{typetable|Steel}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+{{gdex/Champs|0623|Golurk|2|Ground|Ghost|Yes|1.0.2}}
+{{gdex/Champs|0635|Hydreigon|2|Dark|Dragon|Yes|1.0.2}}
+{{gdex/Champs|0637|Volcarona|2|Bug|Fire|Yes|1.0.2}}
+{{gdex/Champs|0652|Chesnaught|2|Grass|Fighting|Yes|1.0.2}}
+{{gdex/Champs|0655|Delphox|2|Fire|Psychic|Yes|1.0.2}}
+{{gdex/Champs|0658|Greninja|2|Water|Dark|Yes|1.0.2}}
+{{gdex/Champs|0660|Diggersby|2|Normal|Ground|Yes|1.0.2}}
+{{gdex/Champs|0663|Talonflame|2|Fire|Flying|Yes|1.0.2}}
+{{gdex/Champs|0666|Vivillon|2|Bug|Flying|ig=-High Plains|Yes|1.0.2}}
+|- style="background:#FFF"
+| rowspan="2" style="font-family:monospace,monospace" | #0678
+! {{MSP/Champs|0668|Pyroar}}
+| {{p|Pyroar}}<br><small>Male</small>
+{{typetable|Fire}}{{typetable|Normal}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.1.0
+|- style="background:#FFF"
+! {{MSP/Champs|0668|Pyroar|form=-Female}}
+| {{p|Pyroar}}<br><small>Female</small>
+{{typetable|Fire}}{{typetable|Normal}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.1.0
+|- style="background:#FFF"
+{{gdex/Champs|0670|Floette|1|Fairy|ig=-Eternal|form=Eternal Flower|Transfer only|1.0.2}}
+{{gdex/Champs|0671|Florges|1|Fairy|Yes|1.0.2}}
+{{gdex/Champs|0675|Pangoro|2|Fighting|Dark|Yes|1.0.2}}
+{{gdex/Champs|0676|Furfrou|1|Normal|Yes|1.0.2}}
+|- style="background:#FFF"
+| rowspan="2" style="font-family:monospace,monospace" | #0678
+! {{MSP/Champs|0678|Meowstic}}
+| {{p|Meowstic}}<br><small>Male</small>
+{{typetable|Psychic|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0678|Meowstic|form=-Female}}
+| {{p|Meowstic}}<br><small>Female</small>
+{{typetable|Psychic|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+{{gdex/Champs|0681|Aegislash|2|Steel|Ghost|Yes|1.0.2}}
+{{gdex/Champs|0683|Aromatisse|1|Fairy|Yes|1.0.2}}
+{{gdex/Champs|0685|Slurpuff|1|Fairy|Yes|1.0.2}}
+{{gdex/Champs|0687|Malamar|2|Dark|Psychic|Yes|1.1.0}}
+{{gdex/Champs|0689|Barbaracle|2|Rock|Water|Yes|1.1.0}}
+{{gdex/Champs|0691|Dragalge|2|Poison|Dragon|Yes|1.1.0}}
+{{gdex/Champs|0693|Clawitzer|1|Water|Yes|1.0.2}}
+{{gdex/Champs|0695|Heliolisk|2|Electric|Normal|Yes|1.0.2}}
+{{gdex/Champs|0697|Tyrantrum|2|Rock|Dragon|Yes|1.0.2}}
+{{gdex/Champs|0699|Aurorus|2|Rock|Ice|Yes|1.0.2}}
+{{gdex/Champs|0700|Sylveon|1|Fairy|Yes|1.0.2}}
+{{gdex/Champs|0701|Hawlucha|2|Fighting|Flying|Yes|1.0.2}}
+{{gdex/Champs|0702|Dedenne|2|Electric|Fairy|Yes|1.0.2}}
+|- style="background:#FFF"
+| rowspan="2" style="font-family:monospace,monospace" | #0706
+! {{MSP/Champs|0706|Goodra}}
+| {{p|Goodra}}
+{{typetable|Dragon|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0706|Goodra|form=-Hisui}}
+| {{p|Goodra}}<br><small>Hisuian Form</small>
+{{typetable|Steel}}{{typetable|Dragon}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+{{gdex/Champs|0707|Klefki|2|Steel|Fairy|Yes|1.0.2}}
+{{gdex/Champs|0709|Trevenant|2|Ghost|Grass|Yes|1.0.2}}
+|- style="background:#FFF"
+| style="font-family:monospace,monospace" | #0711
+! {{MSP/Champs|0711|Gourgeist}}
+| {{p|Gourgeist}}
+{{typetable|Ghost}}{{typetable|Grass}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+| rowspan="2" style="font-family:monospace,monospace" | #0713
+! {{MSP/Champs|0713|Avalugg}}
+| {{p|Avalugg}}
+{{typetable|Ice|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0713|Avalugg|form=-Hisui}}
+| {{p|Avalugg}}<br><small>Hisuian Form</small>
+{{typetable|Ice}}{{typetable|Rock}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+{{gdex/Champs|0715|Noivern|2|Flying|Dragon|Yes|1.0.2}}
+|- style="background:#FFF"
+| rowspan="2" style="font-family:monospace,monospace" | #0724
+! {{MSP/Champs|0724|Decidueye}}
+| {{p|Decidueye}}
+{{typetable|Grass}}{{typetable|Ghost}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0724|Decidueye|form=-Hisui}}
+| {{p|Decidueye}}<br><small>Hisuian Form</small>
+{{typetable|Grass}}{{typetable|Fighting}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+{{gdex/Champs|0727|Incineroar|2|Fire|Dark|Yes|1.0.2}}
+{{gdex/Champs|0730|Primarina|2|Water|Fairy|Yes|1.0.2}}
+{{gdex/Champs|0733|Toucannon|2|Normal|Flying|Yes|1.0.2}}
+{{gdex/Champs|0740|Crabominable|2|Fighting|Ice|Yes|1.0.2}}
+{{gdex/Champs|0745|Lycanroc|1|Rock|Yes|1.0.2}}
+|- style="background:#FFF"
+{{gdex/Champs|0748|Toxapex|2|Poison|Water|Yes|1.0.2}}
+{{gdex/Champs|0750|Mudsdale|1|Ground|Yes|1.0.2}}
+{{gdex/Champs|0752|Araquanid|2|Water|Bug|Yes|1.0.2}}
+{{gdex/Champs|0758|Salazzle|2|Poison|Fire|Yes|1.0.2}}
+{{gdex/Champs|0763|Tsareena|1|Grass|Yes|1.0.2}}
+{{gdex/Champs|0765|Oranguru|2|Normal|Psychic|Yes|1.0.2}}
+{{gdex/Champs|0766|Passimian|1|Fighting|Yes|1.0.2}}
+{{gdex/Champs|0778|Mimikyu|2|Ghost|Fairy|Yes|1.0.2}}
+{{gdex/Champs|0780|Drampa|2|Normal|Dragon|Yes|1.0.2}}
+{{gdex/Champs|0784|Kommo-o|2|Dragon|Fighting|Yes|1.0.2}}
+{{gdex/Champs|0823|Corviknight|2|Flying|Steel|Yes|1.0.2}}
+{{gdex/Champs|0841|Flapple|2|Grass|Dragon|Yes|1.0.2}}
+{{gdex/Champs|0842|Appletun|2|Grass|Dragon|Yes|1.0.2}}
+{{gdex/Champs|0844|Sandaconda|1|Ground|Yes|1.0.2}}
+{{gdex/Champs|0855|Polteageist|1|Ghost|Yes|1.0.2}}
+{{gdex/Champs|0858|Hatterene|2|Psychic|Fairy|Yes|1.0.2}}
+{{gdex/Champs|0861|Grimmsnarl|2|Dark|Fairy|Yes|1.1.0}}
+{{gdex/Champs|0866|Mr. Rime|2|Ice|Psychic|Yes|1.0.2}}
+{{gdex/Champs|0867|Runerigus|2|Ground|Ghost|Yes|1.0.2}}
+{{gdex/Champs|0869|Alcremie|1|Fairy|Yes|1.0.2}}
+{{gdex/Champs|0870|Falinks|1|Fighting|Yes|1.1.0}}
+{{gdex/Champs|0877|Morpeko|2|Electric|Dark|Yes|1.0.2}}
+{{gdex/Champs|0887|Dragapult|2|Dragon|Ghost|Yes|1.0.2}}
+{{gdex/Champs|0899|Wyrdeer|2|Normal|Psychic|Yes|1.0.2}}
+{{gdex/Champs|0900|Kleavor|2|Bug|Rock|Yes|1.0.2}}
+|- style="background:#FFF"
+| rowspan="2" style="font-family:monospace,monospace" | #0902
+! {{MSP/Champs|0902|Basculegion}}
+| {{p|Basculegion}}<br><small>Male</small>
+{{typetable|Water}}{{typetable|Ghost}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0902|Basculegion|form=-Female}}
+| {{p|Basculegion}}<br><small>Female</small>
+{{typetable|Water}}{{typetable|Ghost}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+{{gdex/Champs|0903|Sneasler|2|Fighting|Poison|Yes|1.0.2}}
+{{gdex/Champs|0904|Overqwil|2|Dark|Poison|Yes|1.1.0}}
+{{gdex/Champs|0908|Meowscarada|2|Grass|Dark|Yes|1.0.2}}
+{{gdex/Champs|0911|Skeledirge|2|Fire|Ghost|Yes|1.0.2}}
+{{gdex/Champs|0914|Quaquaval|2|Water|Fighting|Yes|1.0.2}}
+<!--{{gdex/Champs|0923|Pawmot|2|Electric|Fighting|Transfer only|1.0.2}}-->
+{{gdex/Champs|0925|Maushold|1|Normal|Yes|1.0.2}}
+{{gdex/Champs|0934|Garganacl|1|Rock|Yes|1.0.2}}
+{{gdex/Champs|0936|Armarouge|2|Fire|Psychic|Yes|1.0.2}}
+{{gdex/Champs|0937|Ceruledge|2|Fire|Ghost|Yes|1.0.2}}
+{{gdex/Champs|0939|Bellibolt|1|Electric|Yes|1.0.2}}
+{{gdex/Champs|0952|Scovillain|2|Grass|Fire|Yes|1.0.2}}
+{{gdex/Champs|0956|Espathra|1|Psychic|Yes|1.0.2}}
+{{gdex/Champs|0959|Tinkaton|2|Fairy|Steel|Yes|1.0.2}}
+{{gdex/Champs|0964|Palafin|1|Water|Yes|1.0.2}}
+{{gdex/Champs|0968|Orthworm|1|Steel|Yes|1.0.2}}
+{{gdex/Champs|0970|Glimmora|2|Rock|Poison|Yes|1.0.2}}
+{{gdex/Champs|0972|Houndstone|1|Ghost|Yes|1.1.0}}
+{{gdex/Champs|0979|Annihilape|2|Fighting|Ghost|Yes|1.1.0}}
+{{gdex/Champs|0981|Farigiraf|2|Normal|Psychic|Yes|1.0.2}}
+{{gdex/Champs|0983|Kingambit|2|Dark|Steel|Yes|1.0.2}}
+{{gdex/Champs|1000|Gholdengo|2|Steel|Ghost|Yes|1.1.0}}
+{{gdex/Champs|1013|Sinistcha|2|Grass|Ghost|Yes|1.0.2}}
+{{gdex/Champs|1018|Archaludon|2|Steel|Dragon|Yes|1.0.2}}
+{{gdex/Champs|1019|Hydrapple|2|Grass|Dragon|Yes|1.0.2}}
+|}
+
+===Forms===
+====Mega Evolutions====
+Some [[Mega Stone]]s are only obtainable from the tutorial, rather than the shop. The [[Floettite]] stone is allowed under the current regulation, but it requires transferring the base Pokémon from {{pkmn|HOME}}.
+{{gdexh/Champs}}
+{{gdex/Champs|0003|Venusaur|2|Grass|Poison|ig=-Mega|form=Mega Venusaur|Yes|1.0.2}}
+|- style="background:#FFF"
+| rowspan="2" style="font-family:monospace,monospace" | #0006
+! {{MSP/Champs|0006|Charizard|form=-Mega X}}
+| {{p|Charizard}}<br><small>Mega Charizard X</small>
+{{typetable|Fire}}{{typetable|Dragon}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0006|Charizard|form=-Mega Y}}
+| {{p|Charizard}}<br><small>Mega Charizard Y</small>
+{{typetable|Fire}}{{typetable|Flying}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+{{gdex/Champs|0009|Blastoise|1|Water|ig=-Mega|form=Mega Blastoise|Yes|1.0.2}}
+{{gdex/Champs|0015|Beedrill|2|Bug|Poison|ig=-Mega|form=Mega Beedrill|Yes|1.0.2}}
+{{gdex/Champs|0018|Pidgeot|2|Normal|Flying|ig=-Mega|form=Mega Pidgeot|Yes|1.0.2}}
+|- style="background:#FFF"
+| rowspan="2" style="font-family:monospace,monospace" | #0026
+! {{MSP/Champs|0026|Raichu|form=-Mega X}}
+| {{p|Raichu}}<br><small>Mega Raichu X</small>
+{{typetable2|Electric}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.1.0
+|- style="background:#FFF"
+! {{MSP/Champs|0026|Raichu|form=-Mega Y}}
+| {{p|Raichu}}<br><small>Mega Raichu Y</small>
+{{typetable2|Electric}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.1.0
+|- style="background:#FFF"
+{{gdex/Champs|0036|Clefable|2|Fairy|Flying|ig=-Mega|form=Mega Clefable|Yes|1.0.2}}
+{{gdex/Champs|0065|Alakazam|1|Psychic|ig=-Mega|form=Mega Alakazam|Yes|1.0.2}}
+{{gdex/Champs|0071|Victreebel|2|Grass|Poison|ig=-Mega|form=Mega Victreebel|Yes|1.0.2}}
+{{gdex/Champs|0080|Slowbro|2|Water|Psychic|ig=-Mega|form=Mega Slowbro|Yes|1.0.2}}
+{{gdex/Champs|0094|Gengar|2|Ghost|Poison|ig=-Mega|form=Mega Gengar|Yes|1.0.2}}
+{{gdex/Champs|0115|Kangaskhan|1|Normal|ig=-Mega|form=Mega Kangaskhan|Yes|1.0.2}}
+{{gdex/Champs|0121|Starmie|2|Water|Psychic|ig=-Mega|form=Mega Starmie|Yes|1.0.2}}
+{{gdex/Champs|0127|Pinsir|2|Bug|Flying|ig=-Mega|form=Mega Pinsir|Yes|1.0.2}}
+{{gdex/Champs|0130|Gyarados|2|Water|Dark|ig=-Mega|form=Mega Gyarados|Yes|1.0.2}}
+{{gdex/Champs|0142|Aerodactyl|2|Rock|Flying|ig=-Mega|form=Mega Aerodactyl|Yes|1.0.2}}
+{{gdex/Champs|0149|Dragonite|2|Dragon|Flying|ig=-Mega|form=Mega Dragonite|Yes|1.0.2}}
+{{gdex/Champs|0154|Meganium|2|Grass|Fairy|ig=-Mega|form=Mega Meganium|Yes|1.0.2}}
+{{gdex/Champs|0160|Feraligatr|2|Water|Dragon|ig=-Mega|form=Mega Feraligatr|Yes|1.0.2}}
+{{gdex/Champs|0181|Ampharos|2|Electric|Dragon|ig=-Mega|form=Mega Ampharos|Yes|1.0.2}}
+{{gdex/Champs|0208|Steelix|2|Steel|Ground|ig=-Mega|form=Mega Steelix|Yes|1.0.2}}
+{{gdex/Champs|0212|Scizor|2|Bug|Steel|ig=-Mega|form=Mega Scizor|Yes|1.0.2}}
+{{gdex/Champs|0214|Heracross|2|Bug|Fighting|ig=-Mega|form=Mega Heracross|Yes|1.0.2}}
+{{gdex/Champs|0227|Skarmory|2|Steel|Flying|ig=-Mega|form=Mega Skarmory|Yes|1.0.2}}
+{{gdex/Champs|0229|Houndoom|2|Dark|Fire|ig=-Mega|form=Mega Houndoom|Yes|1.0.2}}
+{{gdex/Champs|0248|Tyranitar|2|Rock|Dark|ig=-Mega|form=Mega Tyranitar|Yes|1.0.2}}
+{{gdex/Champs|0254|Sceptile|2|Grass|Dragon|ig=-Mega|form=Mega Sceptile|Yes|1.1.0}}
+{{gdex/Champs|0257|Blaziken|2|Fire|Fighting|ig=-Mega|form=Mega Blaziken|Yes|1.1.0}}
+{{gdex/Champs|0260|Swampert|2|Water|Ground|ig=-Mega|form=Mega Swampert|Yes|1.1.0}}
+{{gdex/Champs|0282|Gardevoir|2|Psychic|Fairy|ig=-Mega|form=Mega Gardevoir|Yes|1.0.2}}
+{{gdex/Champs|0302|Sableye|2|Dark|Ghost|ig=-Mega|form=Mega Sableye|Yes|1.0.2}}
+{{gdex/Champs|0303|Mawile|2|Steel|Fairy|ig=-Mega|form=Mega Mawile|Yes|1.1.0}}
+{{gdex/Champs|0306|Aggron|1|Steel|ig=-Mega|form=Mega Aggron|Yes|1.0.2}}
+{{gdex/Champs|0308|Medicham|2|Fighting|Psychic|ig=-Mega|form=Mega Medicham|Yes|1.0.2}}
+{{gdex/Champs|0310|Manectric|1|Electric|ig=-Mega|form=Mega Manectric|Yes|1.0.2}}
+{{gdex/Champs|0319|Sharpedo|2|Water|Dark|ig=-Mega|form=Mega Sharpedo|Yes|1.0.2}}
+{{gdex/Champs|0323|Camerupt|2|Fire|Ground|ig=-Mega|form=Mega Camerupt|Yes|1.0.2}}
+{{gdex/Champs|0334|Altaria|2|Dragon|Fairy|ig=-Mega|form=Mega Altaria|Yes|1.0.2}}
+{{gdex/Champs|0354|Banette|1|Ghost|ig=-Mega|form=Mega Banette|Yes|1.0.2}}
+{{gdex/Champs|0358|Chimecho|2|Psychic|Steel|ig=-Mega|form=Mega Chimecho|Yes|1.0.2}}
+{{gdex/Champs|0359|Absol|1|Dark|ig=-Mega|form=Mega Absol|Yes|1.0.2}}
+{{gdex/Champs|0362|Glalie|1|Ice|ig=-Mega|form=Mega Glalie|Yes|1.0.2}}
+{{gdex/Champs|0376|Metagross|2|Steel|Psychic|ig=-Mega|form=Mega Metagross|Yes|1.1.0}}
+{{gdex/Champs|0398|Staraptor|2|Fighting|Flying|ig=-Mega|form=Mega Staraptor|Yes|1.1.0}}
+{{gdex/Champs|0428|Lopunny|2|Normal|Fighting|ig=-Mega|form=Mega Lopunny|Yes|1.0.2}}
+{{gdex/Champs|0445|Garchomp|2|Dragon|Ground|ig=-Mega|form=Mega Garchomp|Yes|1.0.2}}
+{{gdex/Champs|0448|Lucario|2|Fighting|Steel|ig=-Mega|form=Mega Lucario|Yes|1.0.2}}
+{{gdex/Champs|0460|Abomasnow|2|Grass|Ice|ig=-Mega|form=Mega Abomasnow|Yes|1.0.2}}
+{{gdex/Champs|0475|Gallade|2|Psychic|Fighting|ig=-Mega|form=Mega Gallade|Yes|1.0.2}}
+{{gdex/Champs|0478|Froslass|2|Ice|Ghost|ig=-Mega|form=Mega Froslass|Yes|1.0.2}}
+{{gdex/Champs|0500|Emboar|2|Fire|Fighting|ig=-Mega|form=Mega Emboar|Yes|1.0.2}}
+{{gdex/Champs|0530|Excadrill|2|Ground|Steel|ig=-Mega|form=Mega Excadrill|Yes|1.0.2}}
+{{gdex/Champs|0531|Audino|2|Normal|Fairy|ig=-Mega|form=Mega Audino|Yes|1.0.2}}
+{{gdex/Champs|0545|Scolipede|2|Bug|Poison|ig=-Mega|form=Mega Scolipede|Yes|1.1.0}}
+{{gdex/Champs|0560|Scrafty|2|Dark|Fighting|ig=-Mega|form=Mega Scrafty|Yes|1.1.0}}
+{{gdex/Champs|0604|Eelektross|1|Electric|ig=-Mega|form=Mega Eelektross|Yes|1.1.0}}
+{{gdex/Champs|0609|Chandelure|2|Ghost|Fire|ig=-Mega|form=Mega Chandelure|Yes|1.0.2}}
+{{gdex/Champs|0623|Golurk|2|Ground|Ghost|ig=-Mega|form=Mega Golurk|Yes|1.0.2}}
+{{gdex/Champs|0652|Chesnaught|2|Grass|Fighting|ig=-Mega|form=Mega Chesnaught|Yes|1.0.2}}
+{{gdex/Champs|0655|Delphox|2|Fire|Psychic|ig=-Mega|form=Mega Delphox|Yes|1.0.2}}
+{{gdex/Champs|0658|Greninja|2|Water|Dark|ig=-Mega|form=Mega Greninja|Yes|1.0.2}}
+{{gdex/Champs|0668|Pyroar|2|Fire|Normal|ig=-Mega|form=Mega Pyroar|Yes|1.1.0}}
+{{gdex/Champs|0670|Floette|1|Fairy|ig=-Mega|form=Mega Floette|Event only|1.0.2}}
+{{gdex/Champs|0678|Meowstic|1|Psychic|ig=-Mega|form=Mega Meowstic|Yes|1.0.2}}
+{{gdex/Champs|0687|Malamar|2|Dark|Psychic|ig=-Mega|form=Mega Malamar|Yes|1.1.0}}
+{{gdex/Champs|0689|Barbaracle|2|Rock|Fighting|ig=-Mega|form=Mega Barbaracle|Yes|1.1.0}}
+{{gdex/Champs|0691|Dragalge|2|Poison|Dragon|ig=-Mega|form=Mega Dragalge|Yes|1.1.0}}
+{{gdex/Champs|0701|Hawlucha|2|Fighting|Flying|ig=-Mega|form=Mega Hawlucha|Yes|1.0.2}}
+{{gdex/Champs|0740|Crabominable|2|Fighting|Ice|ig=-Mega|form=Mega Crabominable|Yes|1.0.2}}
+{{gdex/Champs|0780|Drampa|2|Normal|Dragon|ig=-Mega|form=Mega Drampa|Yes|1.0.2}}
+{{gdex/Champs|0870|Falinks|1|Fighting|ig=-Mega|form=Mega Falinks|Yes|1.1.0}}
+{{gdex/Champs|0952|Scovillain|2|Grass|Fire|ig=-Mega|form=Mega Scovillain|Yes|1.0.2}}
+{{gdex/Champs|0970|Glimmora|2|Rock|Poison|ig=-Mega|form=Mega Glimmora|Yes|1.0.2}}
+|}
+
+====Other forms====
+{{gdexh/Champs}}
+|- style="background:#FFF"
+| rowspan="3" style="font-family:monospace,monospace" | #0351
+! {{MSP/Champs|0351|Castform|form=-Sunny}}
+| {{p|Castform}}<br><small>Sunny Form</small>
+{{typetable|Fire|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0351|Castform|form=-Rainy}}
+| {{p|Castform}}<br><small>Rainy Form</small>
+{{typetable|Water|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0351|Castform|form=-Snowy}}
+| {{p|Castform}}<br><small>Snowy Form</small>
+{{typetable|Ice|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+| rowspan="5" style="font-family:monospace,monospace" | #0479
+! {{MSP/Champs|0479|Rotom|form=-Heat}}
+| {{p|Rotom}}<br><small>Heat Rotom</small>
+{{typetable|Electric}}{{typetable|Fire}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0479|Rotom|form=-Wash}}
+| {{p|Rotom}}<br><small>Wash Rotom</small>
+{{typetable|Electric}}{{typetable|Water}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0479|Rotom|form=-Frost}}
+| {{p|Rotom}}<br><small>Frost Rotom</small>
+{{typetable|Electric}}{{typetable|Ice}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0479|Rotom|form=-Fan}}
+| {{p|Rotom}}<br><small>Fan Rotom</small>
+{{typetable|Electric}}{{typetable|Flying}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0479|Rotom|form=-Mow}}
+| {{p|Rotom}}<br><small>Mow Rotom</small>
+{{typetable|Electric}}{{typetable|Grass}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+| rowspan="19" style="font-family:monospace,monospace" | #0666
+! {{MSP/Champs|0666|Vivillon|form=-Icy Snow}}
+| {{p|Vivillon}}<br><small>Icy Snow Pattern</small>
+{{typetable|Bug}}{{typetable|Flying}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0666|Vivillon|form=-Polar}}
+| {{p|Vivillon}}<br><small>Polar Pattern</small>
+{{typetable|Bug}}{{typetable|Flying}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0666|Vivillon|form=-Tundra}}
+| {{p|Vivillon}}<br><small>Tundra Pattern</small>
+{{typetable|Bug}}{{typetable|Flying}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0666|Vivillon|form=-Continental}}
+| {{p|Vivillon}}<br><small>Continental Pattern</small>
+{{typetable|Bug}}{{typetable|Flying}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0666|Vivillon|form=-Garden}}
+| {{p|Vivillon}}<br><small>Garden Pattern</small>
+{{typetable|Bug}}{{typetable|Flying}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0666|Vivillon|form=-Elegant}}
+| {{p|Vivillon}}<br><small>Elegant Pattern</small>
+{{typetable|Bug}}{{typetable|Flying}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0666|Vivillon}}
+| {{p|Vivillon}}<br><small>Meadow Pattern</small>
+{{typetable|Bug}}{{typetable|Flying}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0666|Vivillon|form=-Modern}}
+| {{p|Vivillon}}<br><small>Modern Pattern</small>
+{{typetable|Bug}}{{typetable|Flying}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0666|Vivillon|form=-Marine}}
+| {{p|Vivillon}}<br><small>Marine Pattern</small>
+{{typetable|Bug}}{{typetable|Flying}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0666|Vivillon|form=-Archipelago}}
+| {{p|Vivillon}}<br><small>Archipelago Pattern</small>
+{{typetable|Bug}}{{typetable|Flying}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0666|Vivillon|form=-Sandstorm}}
+| {{p|Vivillon}}<br><small>Sandstorm Pattern</small>
+{{typetable|Bug}}{{typetable|Flying}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0666|Vivillon|form=-River}}
+| {{p|Vivillon}}<br><small>River Pattern</small>
+{{typetable|Bug}}{{typetable|Flying}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0666|Vivillon|form=-Monsoon}}
+| {{p|Vivillon}}<br><small>Monsoon Pattern</small>
+{{typetable|Bug}}{{typetable|Flying}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0666|Vivillon|form=-Savanna}}
+| {{p|Vivillon}}<br><small>Savanna Pattern</small>
+{{typetable|Bug}}{{typetable|Flying}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0666|Vivillon|form=-Sun}}
+| {{p|Vivillon}}<br><small>Sun Pattern</small>
+{{typetable|Bug}}{{typetable|Flying}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0666|Vivillon|form=-Ocean}}
+| {{p|Vivillon}}<br><small>Ocean Pattern</small>
+{{typetable|Bug}}{{typetable|Flying}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0666|Vivillon|form=-Jungle}}
+| {{p|Vivillon}}<br><small>Jungle Pattern</small>
+{{typetable|Bug}}{{typetable|Flying}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0666|Vivillon|form=-Fancy}}
+| {{p|Vivillon}}<br><small>Fancy Pattern</small>
+{{typetable|Bug}}{{typetable|Flying}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0666|Vivillon|form=-Poké Ball}}
+| {{p|Vivillon}}<br><small>Poké Ball Pattern</small>
+{{typetable|Bug}}{{typetable|Flying}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+| rowspan="4" style="font-family:monospace,monospace" | #0671
+! {{MSP/Champs|0671|Florges|form=-Yellow}}
+| {{p|Florges}}<br><small>Yellow Flower</small>
+{{typetable|Fairy|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0671|Florges|form=-Orange}}
+| {{p|Florges}}<br><small>Orange Flower</small>
+{{typetable|Fairy|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0671|Florges|form=-Blue}}
+| {{p|Florges}}<br><small>Blue Flower</small>
+{{typetable|Fairy|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0671|Florges|form=-White}}
+| {{p|Florges}}<br><small>White Flower</small>
+{{typetable|Fairy|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+| rowspan="9" style="font-family:monospace,monospace" | #0676
+! {{MSP/Champs|0676|Furfrou|form=-Heart}}
+| {{p|Furfrou}}<br><small>Heart Trim</small>
+{{typetable|Normal|colspan=2}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0676|Furfrou|form=-Star}}
+| {{p|Furfrou}}<br><small>Star Trim</small>
+{{typetable|Normal|colspan=2}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0676|Furfrou|form=-Diamond}}
+| {{p|Furfrou}}<br><small>Diamond Trim</small>
+{{typetable|Normal|colspan=2}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0676|Furfrou|form=-Debutante}}
+| {{p|Furfrou}}<br><small>Debutante Trim</small>
+{{typetable|Normal|colspan=2}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0676|Furfrou|form=-Matron}}
+| {{p|Furfrou}}<br><small>Matron Trim</small>
+{{typetable|Normal|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0676|Furfrou|form=-Dandy}}
+| {{p|Furfrou}}<br><small>Dandy Trim</small>
+{{typetable|Normal|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0676|Furfrou|form=-La Reine}}
+| {{p|Furfrou}}<br><small>La Reine Trim</small>
+{{typetable|Normal|colspan=2}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0676|Furfrou|form=-Kabuki}}
+| {{p|Furfrou}}<br><small>Kabuki Trim</small>
+{{typetable|Normal|colspan=2}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0676|Furfrou|form=-Pharaoh}}
+| {{p|Furfrou}}<br><small>Pharaoh Trim</small>
+{{typetable|Normal|colspan=2}}
+| style="text-align:center;" | Transfer only
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+{{gdex/Champs|0681|Aegislash|2|Steel|Ghost|ig=-Blade|form=Blade Forme|Yes|1.0.2}}
+|- style="background:#FFF"
+| rowspan="3" style="font-family:monospace,monospace" | #0711
+! {{MSP/Champs|0711|Gourgeist|form=-Small}}
+| {{p|Gourgeist}}<br><small>Small Variety</small>
+{{typetable|Ghost}}{{typetable|Grass}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0711|Gourgeist|form=-Large}}
+| {{p|Gourgeist}}<br><small>Large Variety</small>
+{{typetable|Ghost}}{{typetable|Grass}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0711|Gourgeist|form=-Jumbo}}
+| {{p|Gourgeist}}<br><small>Jumbo Variety</small>
+{{typetable|Ghost}}{{typetable|Grass}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+| rowspan="2" style="font-family:monospace,monospace" | #0745
+! {{MSP/Champs|0745|Lycanroc|form=-Midnight}}
+| {{p|Lycanroc}}<br><small>Midnight Form</small>
+{{typetable|Rock|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0745|Lycanroc|form=-Dusk}}
+| {{p|Lycanroc}}<br><small>Dusk Form</small>
+{{typetable|Rock|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+| rowspan="8" style="font-family:monospace,monospace" | #0869
+! {{MSP/Champs|0869|Alcremie|form=-Ruby Cream}}
+| {{p|Alcremie}}<br><small>Ruby Cream</small>
+{{typetable|Fairy|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0869|Alcremie|form=-Matcha Cream}}
+| {{p|Alcremie}}<br><small>Matcha Cream</small>
+{{typetable|Fairy|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0869|Alcremie|form=-Mint Cream}}
+| {{p|Alcremie}}<br><small>Mint Cream</small>
+{{typetable|Fairy|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0869|Alcremie|form=-Lemon Cream}}
+| {{p|Alcremie}}<br><small>Lemon Cream</small>
+{{typetable|Fairy|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0869|Alcremie|form=-Salted Cream}}
+| {{p|Alcremie}}<br><small>Salted Cream</small>
+{{typetable|Fairy|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0869|Alcremie|form=-Ruby Swirl}}
+| {{p|Alcremie}}<br><small>Ruby Swirl</small>
+{{typetable|Fairy|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0869|Alcremie|form=-Caramel Swirl}}
+| {{p|Alcremie}}<br><small>Caramel Swirl</small>
+{{typetable|Fairy|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+! {{MSP/Champs|0869|Alcremie|form=-Rainbow Swirl}}
+| {{p|Alcremie}}<br><small>Rainbow Swirl</small>
+{{typetable|Fairy|colspan=2}}
+| style="text-align:center;" | Yes
+| style="text-align:center;" | 1.0.2
+|- style="background:#FFF"
+{{gdex/Champs|0877|Morpeko|2|Electric|Dark|ig=-Hangry|form=Hangry Mode|Yes|1.0.2}}
+{{gdex/Champs|0925|Maushold|1|Normal|ig=-Three|form=Family of Three|Yes|1.0.2}}
+{{gdex/Champs|0964|Palafin|1|Water|ig=-Hero|form=Hero Form|Yes|1.0.2}}
+|}
+*[[Pikachu in a cap]] and Greninja with {{a|Battle Bond}} cannot be sent to Pokémon Champions.
+
+==Untransferable Pokémon==
+These Pokémon are present in the game data, but they cannot currently be transferred in from {{pkmn|HOME}}.
+{{gdexh/Champs}}
+{{gdex/Champs|0923|Pawmot|2|Electric|Fighting|No|1.0.2}}
+|}
+
+==Trivia==
+* Some Pokémon were not present in the game at release, despite being shown in promotional material or artwork related to {{g|Champions}}:
+** {{p|Metagross}}, {{p|Ursaluna}}, {{p|Dondozo}}, {{p|Tatsugiri}}, and {{me|Raichu}} X were shown in promotional material.
+** Mega Raichu Y and Mega {{p|Zygarde}} were shown on the official art for the 2026 Japan Championships, which was played on Pokémon Champions.
+** {{p|Salamence}} is featured on the first splash screen.
+*** Excluding {{pkmn2|Legendary}} and [[Mythical Pokémon]], Mega Salamence is the only Mega Evolution introduced in [[Generation VI]] that is not present in Pokémon Champions.
+** {{p|Pawmot}} is featured on the "Battle" icon on the menu (unlike the others, however, it is present in the game's code, but it is not playable).
+* No {{pkmn2|Legendary}} or [[Mythical Pokémon]] are present in the game<!-- at launch-->.
+** Mega {{p|Zygarde}} is the only Mega Evolution introduced in the base game of {{g|Legends: Z-A}} to not be present in Pokémon Champions.
+* Some Pokémon in the game<!-- at launch--> have unique distinctions:
+** {{p|Pikachu}} is the only Pokémon present in the game<!-- at launch--> that is capable of [[Evolution]].
+** {{p|Qwilfish}} is <!--currently -->the only Pokémon present in the game which has a [[regional form]] that is not present in the game.
+** {{p|Castform}} is the only Pokémon present in the game<!-- at launch--> that does not appear in any [[Generation IX]] [[core series]] games.
+
+==Related articles==
+* [[Pokémon Champions]]
+
+{{Pokémon availability}}
+
+[[Category:Lists of Pokémon]]
+[[Category:Pokémon Champions]]
+
+[[es:Lista de Pokémon de Pokémon Champions]]
+[[it:Elenco dei Pokémon di Pokémon Champions]]
+[[zh:宝可梦列表（Champions）]]

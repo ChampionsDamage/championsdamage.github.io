@@ -51,7 +51,7 @@
     "swap": "Inverti attaccante e difensore",
     "reset": "Reimposta",
     "showAll": "Tutti i Pokémon",
-    "championsOnly": "Solo Champions (forme finali)",
+    "championsOnly": "Solo Champions (Reg M-B)",
     "noDamage": "Questa mossa non infligge danni.",
     "immune": "Il difensore è immune a questa mossa."
   },
@@ -109,7 +109,7 @@
     "data": "Dati: roster e meccaniche della regolazione in corso.",
     "langLabel": "Lingua"
   },
-  "nav": { "calculator": "Calcolatore", "resources": "Risorse", "types": "Tabella dei tipi", "natures": "Nature" },
+  "nav": { "calculator": "Calcolatore", "resources": "Risorse", "types": "Tabella dei tipi", "natures": "Nature", "speed": "Speed tiers" },
   "consent": {
     "text": "Usiamo i cookie per mostrare annunci e mantenere lo strumento gratuito.",
     "accept": "Accetta",
@@ -133,6 +133,15 @@
       "h1": "Nature Pokémon",
       "intro": "Ogni <strong>natura</strong> aumenta una statistica del 10 % e ne riduce un'altra del 10 % (le nature neutre non cambiano nulla). Scegliere bene la natura è fondamentale per massimizzare danni o velocità. Ecco la tabella completa.",
       "colNature": "Natura", "colRaises": "Aumenta (+10 %)", "colLowers": "Riduce (−10 %)", "neutral": "Neutra",
+      "back": "Apri il calcolatore di danni"
+    },
+    "speed": {
+      "slug": "speed-tiers",
+      "title": "Speed Tiers Pokémon Champions | Tabella di Velocità VGC",
+      "description": "Tabella degli speed tiers di Pokémon Champions: la Velocità al livello 50 di ogni Pokémon del roster, neutra e massima. Scopri chi attacca per primo nel VGC.",
+      "h1": "Speed tiers Pokémon Champions",
+      "intro": "Chi attacca per primo? Ecco la <strong>tabella di velocità (speed tiers)</strong> del roster di Champions al livello 50: la Velocità base, la massima con natura neutra (32 SP) e la massima con natura positiva (32 SP, +10 %). Ordinata dal più veloce al più lento.",
+      "colPokemon": "Pokémon", "colBase": "Base", "colNeutral": "Max. neutra", "colPositive": "Max. +natura",
       "back": "Apri il calcolatore di danni"
     }
   }

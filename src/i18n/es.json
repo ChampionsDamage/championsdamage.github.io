@@ -51,7 +51,7 @@
     "swap": "Intercambiar atacante y defensor",
     "reset": "Reiniciar",
     "showAll": "Todos los Pokémon",
-    "championsOnly": "Solo Champions (formas finales)",
+    "championsOnly": "Solo Champions (Reg M-B)",
     "noDamage": "Este movimiento no causa daño.",
     "immune": "El defensor es inmune a este movimiento."
   },
@@ -109,7 +109,7 @@
     "data": "Datos: roster y mecánicas de la regulación vigente.",
     "langLabel": "Idioma"
   },
-  "nav": { "calculator": "Calculadora", "resources": "Recursos", "types": "Tabla de tipos", "natures": "Naturalezas" },
+  "nav": { "calculator": "Calculadora", "resources": "Recursos", "types": "Tabla de tipos", "natures": "Naturalezas", "speed": "Speed tiers" },
   "consent": {
     "text": "Usamos cookies para mostrar anuncios y mantener la herramienta gratuita.",
     "accept": "Aceptar",
@@ -133,6 +133,15 @@
       "h1": "Naturalezas de Pokémon",
       "intro": "Cada <strong>naturaleza</strong> sube una estadística un 10 % y baja otra un 10 % (las naturalezas neutras no cambian nada). Elegir bien la naturaleza es clave para maximizar daño o velocidad. Aquí tienes la tabla completa.",
       "colNature": "Naturaleza", "colRaises": "Sube (+10 %)", "colLowers": "Baja (−10 %)", "neutral": "Neutra",
+      "back": "Abrir la calculadora de daño"
+    },
+    "speed": {
+      "slug": "tiers-de-velocidad",
+      "title": "Speed Tiers de Pokémon Champions | Tabla de Velocidad VGC",
+      "description": "Tabla de speed tiers de Pokémon Champions: velocidad a nivel 50 de cada Pokémon del roster, con reparto neutro y máximo. Descubre quién ataca primero en VGC.",
+      "h1": "Speed tiers de Pokémon Champions",
+      "intro": "¿Quién ataca primero? Esta es la <strong>tabla de velocidad (speed tiers)</strong> del roster de Champions a nivel 50: la Velocidad base, la máxima con naturaleza neutra (32 SP) y la máxima con naturaleza positiva (32 SP, +10 %). Ordenada de más rápido a más lento.",
+      "colPokemon": "Pokémon", "colBase": "Base", "colNeutral": "Máx. neutra", "colPositive": "Máx. +naturaleza",
       "back": "Abrir la calculadora de daño"
     }
   }

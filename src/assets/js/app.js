@@ -45,7 +45,7 @@
 
   // ---- per-side UI state ----
   function newSide(role) {
-    return { role: role, id: null, nature: 'hardy', ability: '', item: '',
+    return { role: role, id: null, nature: 'hardy', ability: '', item: '', _champOnly: true,
       sp: {hp:0,atk:0,def:0,spa:0,spd:0,spe:0},
       boosts: {atk:0,def:0,spa:0,spd:0,spe:0}, status: 'none', tera: '', curHP: null };
   }
@@ -60,12 +60,17 @@
   function loadData() {
     var base = window.DATA_BASE || '/data/';
     var files = ['pokemon','moves','abilities','items','natures','typechart','meta'];
-    var all = files.concat(['names-' + LANG]);
+    var all = files.concat(['names-' + LANG, 'regulations']);
     return Promise.all(all.map(function (f) {
       return fetch(base + f + '.json').then(function (r) { return r.json(); }).catch(function () { return {}; });
     })).then(function (res) {
       files.forEach(function (f, i) { DATA[f] = res[i]; });
       DATA.names = res[files.length] || {};
+      DATA.regulations = res[files.length + 1] || {};
+      // build the set of Champions-legal species ids for the current regulation
+      DATA.championsSet = null;
+      var reg = DATA.regulations.regulations && DATA.regulations.regulations[DATA.regulations.current];
+      if (reg && reg.roster) DATA.championsSet = new Set(reg.roster);
       E.setTypeChart(DATA.typechart);
       DATA.pokemonList = Object.values(DATA.pokemon).sort(function (a, b) {
         return a.name.localeCompare(b.name);
@@ -146,7 +151,10 @@
       getItems: function (q) {
         q = toID(q);
         var arr = DATA.pokemonList.filter(function (p) {
-          if (side._champOnly && (p.evo || p.mega)) return false;
+          if (side._champOnly) {
+            if (DATA.championsSet) { if (!DATA.championsSet.has(p.id)) return false; }
+            else if (p.evo || p.mega) return false;   // fallback heuristic
+          }
           return !q || toID(p.name).indexOf(q) !== -1 || toID(pkmnName(p)).indexOf(q) !== -1;
         });
         return arr.map(function (p) { return { id: p.id, name: pkmnName(p), types: p.types }; });

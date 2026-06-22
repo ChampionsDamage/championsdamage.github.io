@@ -51,7 +51,7 @@
     "swap": "Inverser attaquant et défenseur",
     "reset": "Réinitialiser",
     "showAll": "Tous les Pokémon",
-    "championsOnly": "Champions seulement (formes finales)",
+    "championsOnly": "Champions uniquement (Reg M-B)",
     "noDamage": "Cette capacité n'inflige pas de dégâts.",
     "immune": "Le défenseur est insensible à cette capacité."
   },
@@ -109,7 +109,7 @@
     "data": "Données : roster et mécaniques de la régulation en cours.",
     "langLabel": "Langue"
   },
-  "nav": { "calculator": "Calculateur", "resources": "Ressources", "types": "Table des types", "natures": "Natures" },
+  "nav": { "calculator": "Calculateur", "resources": "Ressources", "types": "Table des types", "natures": "Natures", "speed": "Speed tiers" },
   "consent": {
     "text": "Nous utilisons des cookies pour afficher des publicités et garder l'outil gratuit.",
     "accept": "Accepter",
@@ -133,6 +133,15 @@
       "h1": "Natures Pokémon",
       "intro": "Chaque <strong>nature</strong> augmente une statistique de 10 % et en diminue une autre de 10 % (les natures neutres ne changent rien). Bien choisir sa nature est essentiel pour maximiser les dégâts ou la vitesse. Voici le tableau complet.",
       "colNature": "Nature", "colRaises": "Augmente (+10 %)", "colLowers": "Diminue (−10 %)", "neutral": "Neutre",
+      "back": "Ouvrir le calculateur de dégâts"
+    },
+    "speed": {
+      "slug": "speed-tiers",
+      "title": "Speed Tiers Pokémon Champions | Tableau de Vitesse VGC",
+      "description": "Tableau des speed tiers de Pokémon Champions : la Vitesse au niveau 50 de chaque Pokémon du roster, en neutre et au maximum. Découvrez qui attaque en premier en VGC.",
+      "h1": "Speed tiers Pokémon Champions",
+      "intro": "Qui attaque en premier ? Voici le <strong>tableau de vitesse (speed tiers)</strong> du roster de Champions au niveau 50 : la Vitesse de base, la maximale avec nature neutre (32 SP) et la maximale avec nature positive (32 SP, +10 %). Trié du plus rapide au plus lent.",
+      "colPokemon": "Pokémon", "colBase": "Base", "colNeutral": "Max. neutre", "colPositive": "Max. +nature",
       "back": "Ouvrir le calculateur de dégâts"
     }
   }
