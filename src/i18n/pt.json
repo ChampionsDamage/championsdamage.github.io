@@ -114,7 +114,7 @@
     "text": "Usamos cookies para analisar o tráfego e manter a ferramenta gratuita.",
     "accept": "Aceitar",
     "reject": "Recusar",
-    "more": "Saiba mais"
+    "more": "Saiba mais", "manage": "Configurar cookies"
   },
   "cluster": {
     "types": {

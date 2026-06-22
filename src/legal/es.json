@@ -6,11 +6,26 @@
   "updatedLabel": "Última actualización",
   "metaDescription": "Aviso legal, política de privacidad y cookies de ChampionsDamage, la calculadora de daño de Pokémon Champions.",
   "sections": [
-    { "h": "Quiénes somos", "html": "ChampionsDamage es una herramienta gratuita creada por aficionados que calcula el daño en Pokémon Champions. No estamos afiliados a Nintendo, Game Freak ni The Pokémon Company. «Pokémon» y «Pokémon Champions» son marcas de sus respectivos propietarios." },
-    { "h": "Privacidad", "html": "No te pedimos registro ni recopilamos datos personales para usar la calculadora. Las preferencias y los cálculos se guardan en tu propio navegador (la URL y el almacenamiento local); no se envían a ningún servidor nuestro." },
-    { "h": "Cookies y publicidad", "html": "Para sostener el proyecto podemos mostrar anuncios mediante <strong>Google AdSense</strong>. Google y sus colaboradores pueden usar cookies para mostrar anuncios basados en tus visitas a este y otros sitios. Puedes gestionar la personalización de anuncios en la <a href=\"https://www.google.com/settings/ads\" rel=\"nofollow noopener\" target=\"_blank\">configuración de anuncios de Google</a> y obtener más información en las <a href=\"https://policies.google.com/technologies/partner-sites\" rel=\"nofollow noopener\" target=\"_blank\">políticas de socios de Google</a>. Si nos visitas desde la Unión Europea, te pediremos consentimiento antes de cargar cookies no esenciales." },
-    { "h": "Analítica", "html": "Usamos <strong>Google Analytics 4</strong> con la IP anonimizada y solo tras tu consentimiento, para medir el tráfico de forma agregada. No te identificamos personalmente. Puedes rechazarlo en el aviso de cookies." },
-    { "h": "Exactitud de los datos", "html": "Los datos de combate (estadísticas, tipos, movimientos) provienen de fuentes públicas de la comunidad y se ofrecen «tal cual», sin garantía. Verifica siempre la información relevante para torneos en las fuentes oficiales." }
+    {
+      "h": "Quiénes somos",
+      "html": "ChampionsDamage es una herramienta gratuita creada por aficionados que calcula el daño en Pokémon Champions. No estamos afiliados a Nintendo, Game Freak ni The Pokémon Company. «Pokémon» y «Pokémon Champions» son marcas de sus respectivos propietarios."
+    },
+    {
+      "h": "Privacidad",
+      "html": "No te pedimos registro ni recopilamos datos personales para usar la calculadora. Las preferencias y los cálculos se guardan en tu propio navegador (la URL y el almacenamiento local); no se envían a ningún servidor nuestro."
+    },
+    {
+      "h": "Cookies y publicidad",
+      "html": "Para sostener el proyecto podemos mostrar anuncios mediante <strong>Google AdSense</strong>. Google y sus colaboradores pueden usar cookies para mostrar anuncios basados en tus visitas a este y otros sitios. Puedes gestionar la personalización de anuncios en la <a href=\"https://www.google.com/settings/ads\" rel=\"nofollow noopener\" target=\"_blank\">configuración de anuncios de Google</a> y obtener más información en las <a href=\"https://policies.google.com/technologies/partner-sites\" rel=\"nofollow noopener\" target=\"_blank\">políticas de socios de Google</a>. Si nos visitas desde la Unión Europea, te pediremos consentimiento antes de cargar cookies no esenciales. Cookies utilizadas: <strong>Google Analytics&nbsp;4</strong> (<code>_ga</code>, <code>_ga_&lt;id&gt;</code>), de medición de audiencia, con una duración de hasta 13&nbsp;meses. Solo se cargan si las aceptas; puedes revisar o retirar tu consentimiento en «Configurar cookies» (pie de página)."
+    },
+    {
+      "h": "Analítica",
+      "html": "Usamos <strong>Google Analytics 4</strong> con la IP anonimizada y solo tras tu consentimiento, para medir el tráfico de forma agregada. No te identificamos personalmente. Puedes rechazarlo en el aviso de cookies."
+    },
+    {
+      "h": "Exactitud de los datos",
+      "html": "Los datos de combate (estadísticas, tipos, movimientos) provienen de fuentes públicas de la comunidad y se ofrecen «tal cual», sin garantía. Verifica siempre la información relevante para torneos en las fuentes oficiales."
+    }
   ],
   "contact": {
     "h": "Contacto",

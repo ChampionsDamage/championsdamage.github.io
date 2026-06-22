@@ -6,11 +6,26 @@
   "updatedLabel": "Dernière mise à jour",
   "metaDescription": "Mentions légales, politique de confidentialité et cookies de ChampionsDamage, le calculateur de dégâts de Pokémon Champions.",
   "sections": [
-    { "h": "Qui sommes-nous", "html": "ChampionsDamage est un outil gratuit créé par des fans qui calcule les dégâts dans Pokémon Champions. Nous ne sommes affiliés ni à Nintendo, ni à Game Freak, ni à The Pokémon Company. « Pokémon » et « Pokémon Champions » sont des marques de leurs propriétaires respectifs." },
-    { "h": "Confidentialité", "html": "Aucune inscription n'est requise et nous ne collectons pas de données personnelles pour utiliser le calculateur. Les préférences et les calculs sont enregistrés dans votre propre navigateur (dans l'URL et le stockage local) ; ils ne sont envoyés à aucun de nos serveurs." },
-    { "h": "Cookies et publicité", "html": "Pour soutenir le projet, nous pouvons afficher des publicités via <strong>Google AdSense</strong>. Google et ses partenaires peuvent utiliser des cookies pour diffuser des annonces basées sur vos visites sur ce site et d'autres. Vous pouvez gérer la personnalisation des annonces dans les <a href=\"https://www.google.com/settings/ads\" rel=\"nofollow noopener\" target=\"_blank\">paramètres des annonces Google</a> et en savoir plus dans les <a href=\"https://policies.google.com/technologies/partner-sites\" rel=\"nofollow noopener\" target=\"_blank\">règles des sites partenaires de Google</a>. Si vous nous visitez depuis l'Union européenne, nous demanderons votre consentement avant de charger des cookies non essentiels." },
-    { "h": "Mesure d'audience", "html": "Nous utilisons <strong>Google Analytics 4</strong> avec IP anonymisée et uniquement après votre consentement, pour mesurer le trafic de façon agrégée. Nous ne vous identifions pas personnellement. Vous pouvez refuser dans le bandeau de cookies." },
-    { "h": "Exactitude des données", "html": "Les données de combat (statistiques, types, capacités) proviennent de sources publiques de la communauté et sont fournies « telles quelles », sans garantie. Vérifiez toujours les informations importantes pour les tournois auprès des sources officielles." }
+    {
+      "h": "Qui sommes-nous",
+      "html": "ChampionsDamage est un outil gratuit créé par des fans qui calcule les dégâts dans Pokémon Champions. Nous ne sommes affiliés ni à Nintendo, ni à Game Freak, ni à The Pokémon Company. « Pokémon » et « Pokémon Champions » sont des marques de leurs propriétaires respectifs."
+    },
+    {
+      "h": "Confidentialité",
+      "html": "Aucune inscription n'est requise et nous ne collectons pas de données personnelles pour utiliser le calculateur. Les préférences et les calculs sont enregistrés dans votre propre navigateur (dans l'URL et le stockage local) ; ils ne sont envoyés à aucun de nos serveurs."
+    },
+    {
+      "h": "Cookies et publicité",
+      "html": "Pour soutenir le projet, nous pouvons afficher des publicités via <strong>Google AdSense</strong>. Google et ses partenaires peuvent utiliser des cookies pour diffuser des annonces basées sur vos visites sur ce site et d'autres. Vous pouvez gérer la personnalisation des annonces dans les <a href=\"https://www.google.com/settings/ads\" rel=\"nofollow noopener\" target=\"_blank\">paramètres des annonces Google</a> et en savoir plus dans les <a href=\"https://policies.google.com/technologies/partner-sites\" rel=\"nofollow noopener\" target=\"_blank\">règles des sites partenaires de Google</a>. Si vous nous visitez depuis l'Union européenne, nous demanderons votre consentement avant de charger des cookies non essentiels. Cookies utilisés : <strong>Google Analytics&nbsp;4</strong> (<code>_ga</code>, <code>_ga_&lt;id&gt;</code>), de mesure d'audience, d'une durée maximale de 13&nbsp;mois. Ils ne sont chargés que si vous les acceptez ; vous pouvez revoir ou retirer votre consentement via « Gérer les cookies » (pied de page)."
+    },
+    {
+      "h": "Mesure d'audience",
+      "html": "Nous utilisons <strong>Google Analytics 4</strong> avec IP anonymisée et uniquement après votre consentement, pour mesurer le trafic de façon agrégée. Nous ne vous identifions pas personnellement. Vous pouvez refuser dans le bandeau de cookies."
+    },
+    {
+      "h": "Exactitude des données",
+      "html": "Les données de combat (statistiques, types, capacités) proviennent de sources publiques de la communauté et sont fournies « telles quelles », sans garantie. Vérifiez toujours les informations importantes pour les tournois auprès des sources officielles."
+    }
   ],
   "contact": {
     "h": "Contact",

@@ -222,7 +222,7 @@ ${trackingTags()}
     <p class="muted">${esc(t.footer.disclaimer)}</p>
     <p class="muted">${esc(t.footer.data)} (Reg ${esc(cfg.regulation)})</p>
     <nav class="langs">${resourcesNav(lang)}</nav>
-    <p><a href="/${lang}/${legal[lang].slug}/">${esc(legal[lang].nav)}</a> · <a href="/${lang}/${legal[lang].slug}/#contacto">${esc(legal[lang].contactNav)}</a></p>
+    <p><a href="/${lang}/${legal[lang].slug}/">${esc(legal[lang].nav)}</a> · <a href="/${lang}/${legal[lang].slug}/#contacto">${esc(legal[lang].contactNav)}</a> · <a href="#" id="cookieSettings">${esc(t.consent.manage)}</a></p>
   </div>
 </footer>
 

@@ -6,11 +6,26 @@
   "updatedLabel": "Ultimo aggiornamento",
   "metaDescription": "Note legali, informativa sulla privacy e cookie di ChampionsDamage, il calcolatore di danni di Pokémon Champions.",
   "sections": [
-    { "h": "Chi siamo", "html": "ChampionsDamage è uno strumento gratuito creato dai fan che calcola i danni in Pokémon Champions. Non siamo affiliati a Nintendo, Game Freak o The Pokémon Company. «Pokémon» e «Pokémon Champions» sono marchi dei rispettivi proprietari." },
-    { "h": "Privacy", "html": "Non è richiesta alcuna registrazione e non raccogliamo dati personali per usare il calcolatore. Le preferenze e i calcoli vengono salvati nel tuo browser (nell'URL e nella memoria locale); non vengono inviati ad alcun nostro server." },
-    { "h": "Cookie e pubblicità", "html": "Per sostenere il progetto possiamo mostrare annunci tramite <strong>Google AdSense</strong>. Google e i suoi partner possono usare cookie per mostrare annunci in base alle tue visite a questo e ad altri siti. Puoi gestire la personalizzazione degli annunci nelle <a href=\"https://www.google.com/settings/ads\" rel=\"nofollow noopener\" target=\"_blank\">impostazioni annunci di Google</a> e saperne di più nelle <a href=\"https://policies.google.com/technologies/partner-sites\" rel=\"nofollow noopener\" target=\"_blank\">norme per i siti dei partner di Google</a>. Se ci visiti dall'Unione Europea, chiederemo il consenso prima di caricare cookie non essenziali." },
-    { "h": "Analisi del traffico", "html": "Usiamo <strong>Google Analytics 4</strong> con IP anonimizzato e solo dopo il tuo consenso, per misurare il traffico in forma aggregata. Non ti identifichiamo personalmente. Puoi rifiutare nel banner dei cookie." },
-    { "h": "Accuratezza dei dati", "html": "I dati di lotta (statistiche, tipi, mosse) provengono da fonti pubbliche della community e sono forniti «così come sono», senza garanzie. Verifica sempre le informazioni rilevanti per i tornei sulle fonti ufficiali." }
+    {
+      "h": "Chi siamo",
+      "html": "ChampionsDamage è uno strumento gratuito creato dai fan che calcola i danni in Pokémon Champions. Non siamo affiliati a Nintendo, Game Freak o The Pokémon Company. «Pokémon» e «Pokémon Champions» sono marchi dei rispettivi proprietari."
+    },
+    {
+      "h": "Privacy",
+      "html": "Non è richiesta alcuna registrazione e non raccogliamo dati personali per usare il calcolatore. Le preferenze e i calcoli vengono salvati nel tuo browser (nell'URL e nella memoria locale); non vengono inviati ad alcun nostro server."
+    },
+    {
+      "h": "Cookie e pubblicità",
+      "html": "Per sostenere il progetto possiamo mostrare annunci tramite <strong>Google AdSense</strong>. Google e i suoi partner possono usare cookie per mostrare annunci in base alle tue visite a questo e ad altri siti. Puoi gestire la personalizzazione degli annunci nelle <a href=\"https://www.google.com/settings/ads\" rel=\"nofollow noopener\" target=\"_blank\">impostazioni annunci di Google</a> e saperne di più nelle <a href=\"https://policies.google.com/technologies/partner-sites\" rel=\"nofollow noopener\" target=\"_blank\">norme per i siti dei partner di Google</a>. Se ci visiti dall'Unione Europea, chiederemo il consenso prima di caricare cookie non essenziali. Cookie utilizzati: <strong>Google Analytics&nbsp;4</strong> (<code>_ga</code>, <code>_ga_&lt;id&gt;</code>), di misurazione del pubblico, con durata fino a 13&nbsp;mesi. Vengono caricati solo se li accetti; puoi rivedere o revocare il consenso da «Gestisci i cookie» (piè di pagina)."
+    },
+    {
+      "h": "Analisi del traffico",
+      "html": "Usiamo <strong>Google Analytics 4</strong> con IP anonimizzato e solo dopo il tuo consenso, per misurare il traffico in forma aggregata. Non ti identifichiamo personalmente. Puoi rifiutare nel banner dei cookie."
+    },
+    {
+      "h": "Accuratezza dei dati",
+      "html": "I dati di lotta (statistiche, tipi, mosse) provengono da fonti pubbliche della community e sono forniti «così come sono», senza garanzie. Verifica sempre le informazioni rilevanti per i tornei sulle fonti ufficiali."
+    }
   ],
   "contact": {
     "h": "Contatti",
