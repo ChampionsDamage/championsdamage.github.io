@@ -513,25 +513,30 @@ ${trackingTags()}
 }
 
 // --- sitemap & robots ---
-function urlEntry(loc, altsFor) {
+const LASTMOD = cfg.lastUpdated;   // W3C date (YYYY-MM-DD); bump in site.config.json on content changes
+function urlEntry(loc, altsFor, priority, changefreq) {
   const alts = cfg.languages.map((l) =>
     `    <xhtml:link rel="alternate" hreflang="${i18n[l].hreflang}" href="${altsFor(l)}"/>`
   ).join('\n');
-  return `  <url>\n    <loc>${loc}</loc>\n${alts}\n    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}/"/>\n    <changefreq>weekly</changefreq>\n  </url>`;
+  return `  <url>\n    <loc>${loc}</loc>\n` +
+    `    <lastmod>${LASTMOD}</lastmod>\n` +
+    `${alts}\n    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}/"/>\n` +
+    `    <changefreq>${changefreq}</changefreq>\n    <priority>${priority}</priority>\n  </url>`;
 }
 function sitemap() {
   const calcSlug = (l) => SITE + '/' + l + '/';
   const legalSlug = (l) => SITE + '/' + l + '/' + legal[l].slug + '/';
   const entries = [];
-  entries.push(`  <url>\n    <loc>${SITE}/</loc>\n    <changefreq>weekly</changefreq>\n  </url>`);
+  // root (x-default entry point / language router)
+  entries.push(`  <url>\n    <loc>${SITE}/</loc>\n    <lastmod>${LASTMOD}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>`);
   const typesSlug = (l) => SITE + '/' + l + '/' + i18n[l].cluster.types.slug + '/';
   const speedSlug = (l) => SITE + '/' + l + '/' + i18n[l].cluster.speed.slug + '/';
   const naturesSlug = (l) => SITE + '/' + l + '/' + i18n[l].cluster.natures.slug + '/';
-  cfg.languages.forEach((l) => entries.push(urlEntry(calcSlug(l), calcSlug)));
-  cfg.languages.forEach((l) => entries.push(urlEntry(typesSlug(l), typesSlug)));
-  cfg.languages.forEach((l) => entries.push(urlEntry(speedSlug(l), speedSlug)));
-  cfg.languages.forEach((l) => entries.push(urlEntry(naturesSlug(l), naturesSlug)));
-  cfg.languages.forEach((l) => entries.push(urlEntry(legalSlug(l), legalSlug)));
+  cfg.languages.forEach((l) => entries.push(urlEntry(calcSlug(l), calcSlug, '1.0', 'weekly')));
+  cfg.languages.forEach((l) => entries.push(urlEntry(typesSlug(l), typesSlug, '0.7', 'monthly')));
+  cfg.languages.forEach((l) => entries.push(urlEntry(speedSlug(l), speedSlug, '0.7', 'monthly')));
+  cfg.languages.forEach((l) => entries.push(urlEntry(naturesSlug(l), naturesSlug, '0.6', 'monthly')));
+  cfg.languages.forEach((l) => entries.push(urlEntry(legalSlug(l), legalSlug, '0.2', 'yearly')));
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${entries.join('\n')}\n</urlset>\n`;
 }
 function robots() {
