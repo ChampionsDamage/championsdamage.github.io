@@ -1,0 +1,112 @@
+{
+  "lang": "fr",
+  "locale": "fr_FR",
+  "hreflang": "fr",
+  "slug": "calculateur-de-degats",
+  "name": "Français",
+  "meta": {
+    "title": "Calculateur de Dégâts Pokémon Champions — VGC Duo & Méga",
+    "description": "Calculez les dégâts et les KO pour Pokémon Champions en VGC Duo. Points de Stats (SP), natures, talents, objets, météo et Méga-Évolution au niveau 50.",
+    "ogTitle": "Calculateur de Dégâts — Pokémon Champions VGC",
+    "ogDescription": "Les dégâts exacts, la fourchette et la probabilité de KO pour Pokémon Champions. SP, natures, talents, objets et Duo VGC. Rapide et vraiment en français."
+  },
+  "h1": "Calculateur de dégâts Pokémon Champions",
+  "tagline": "Dégâts exacts, fourchette et probabilité de KO pour le VGC de Champions. Niveau 50, système SP, combats en Duo.",
+  "intro": "Voici le <strong>calculateur de dégâts de Pokémon Champions</strong> pensé pour jouer en français : rapide, clair et précis à 100&nbsp;%. Choisissez l'attaquant et le défenseur, répartissez leurs <strong>Points de Stats (SP)</strong>, réglez la nature, le talent, l'objet tenu, la météo et les murs, et obtenez aussitôt la <strong>fourchette de dégâts (16 rolls)</strong> et la <strong>probabilité de KO</strong>. Les chiffres sont identiques à ceux de Showdown — la formule est validée dessus — sauf qu'ici tout est dans votre langue, va droit au but et fonctionne parfaitement sur mobile.",
+  "ui": {
+    "attacker": "Attaquant",
+    "defender": "Défenseur",
+    "selectPokemon": "Choisir un Pokémon",
+    "searchPokemon": "Rechercher un Pokémon…",
+    "move": "Capacité",
+    "selectMove": "Choisir une capacité",
+    "level": "Niveau",
+    "nature": "Nature",
+    "ability": "Talent",
+    "item": "Objet tenu",
+    "teraType": "Type Téracristal",
+    "none": "Aucun",
+    "statPoints": "Points de Stats (SP)",
+    "spRemaining": "SP disponibles",
+    "boosts": "Changements de stats",
+    "status": "Statut",
+    "field": "Conditions de combat",
+    "weather": "Météo",
+    "terrain": "Champ",
+    "format": "Format",
+    "singles": "Simple",
+    "doubles": "Duo (VGC)",
+    "spreadMove": "Capacité de zone (touche plusieurs cibles)",
+    "criticalHit": "Coup critique",
+    "helpingHand": "Coup d'Main",
+    "reflect": "Mur de Fer",
+    "lightScreen": "Mur Lumière",
+    "auroraVeil": "Voile Aurore",
+    "friendGuard": "Allié avec Garde-Ami",
+    "currentHP": "PV actuels du défenseur",
+    "calculate": "Calculer les dégâts",
+    "result": "Résultat",
+    "share": "Partager le calcul",
+    "copied": "Lien copié !",
+    "swap": "Inverser attaquant et défenseur",
+    "reset": "Réinitialiser",
+    "showAll": "Tous les Pokémon",
+    "championsOnly": "Champions seulement (formes finales)",
+    "noDamage": "Cette capacité n'inflige pas de dégâts.",
+    "immune": "Le défenseur est insensible à cette capacité."
+  },
+  "stats": {
+    "hp": "PV",
+    "atk": "Attaque",
+    "def": "Défense",
+    "spa": "Atq. Spé.",
+    "spd": "Déf. Spé.",
+    "spe": "Vitesse"
+  },
+  "weatherOpts": { "none": "Sans météo", "sun": "Soleil", "rain": "Pluie", "sand": "Tempête de sable", "snow": "Neige" },
+  "terrainOpts": { "none": "Sans champ", "electric": "Champ Électrifié", "grassy": "Champ Herbu", "psychic": "Champ Psychique", "misty": "Champ Brumeux" },
+  "statusOpts": { "none": "En forme", "brn": "Brûlure", "par": "Paralysie", "psn": "Empoisonnement", "tox": "Empoisonnement grave" },
+  "effectiveness": {
+    "x4": "Hyper efficace (×4)",
+    "x2": "Super efficace (×2)",
+    "x1": "Dégâts normaux (×1)",
+    "x05": "Pas très efficace (×0,5)",
+    "x025": "Vraiment pas très efficace (×0,25)",
+    "x0": "N'affecte pas (×0)"
+  },
+  "ko": {
+    "guaranteedOHKO": "K.O. en un coup garanti",
+    "chanceOHKO": "{pct} de K.O. en un coup",
+    "guaranteedNHKO": "{n}HKO garanti",
+    "noDamage": "Aucun dégât"
+  },
+  "sections": {
+    "spTitle": "Que sont les Points de Stats (SP) dans Champions",
+    "spBody": "Pokémon Champions remplace les EV et IV classiques par un système de <strong>Points de Stats (SP)</strong> bien plus transparent. Chaque Pokémon dispose de <strong>66 SP</strong> à répartir, avec un <strong>maximum de 32 SP par statistique</strong>, et il n'y a pas d'IV (toujours considérés à 31). La conversion est directe : <strong>1&nbsp;SP équivaut à 8&nbsp;EV</strong>, donc 32&nbsp;SP dans une stat équivalent aux 252&nbsp;EV habituels. La répartition la plus courante —32 dans votre stat offensive et 32 en Vitesse— consomme 64 des 66 points et en laisse 2 pour une troisième. Ce calculateur travaille directement en SP pour que vous voyiez exactement ce que vous aurez en jeu.",
+    "howTitle": "Comment les dégâts sont calculés",
+    "howBody": "Les dégâts partent d'une formule fixe (niveau 50 dans Champions) modifiée par une chaîne de facteurs : le <strong>STAB</strong> (×1,5 si le type de la capacité correspond à celui du Pokémon), l'<strong>efficacité des types</strong>, le <strong>coup critique</strong> (×1,5), la <strong>météo</strong>, le <strong>champ</strong>, les <strong>murs</strong>, les <strong>objets</strong> et les <strong>talents</strong>. À cause de l'aléatoire interne, chaque coup peut prendre 16 valeurs (de 85&nbsp;% à 100&nbsp;%) : c'est pourquoi nous affichons une <strong>fourchette de dégâts</strong> plutôt qu'un seul chiffre. À partir de cette fourchette et des PV du défenseur, nous calculons la <strong>probabilité de KO</strong>.",
+    "faqTitle": "Foire aux questions"
+  },
+  "faq": [
+    { "q": "Les chiffres correspondent-ils à Pokémon Showdown ?", "a": "Oui. La formule est validée contre @smogon/calc (le moteur de Showdown) sur des dizaines de scénarios : STAB, efficacité, météo, murs, objets et talents. Les dégâts sont des maths pures, le résultat est donc identique ; la différence, c'est qu'ici c'est en français et plus rapide sur mobile." },
+    { "q": "Comment convertir mes EV de Écarlate/Violet en SP ?", "a": "Divisez les EV par 8 : 252&nbsp;EV ≈ 32&nbsp;SP, 4&nbsp;EV ≈ 1&nbsp;SP. Rappelez-vous que dans Champions le plafond par stat est de 32&nbsp;SP et le total par Pokémon de 66&nbsp;SP." },
+    { "q": "Qu'est-ce que la fourchette de dégâts et les 16 rolls ?", "a": "Chaque attaque applique un facteur aléatoire entre 85&nbsp;% et 100&nbsp;%, en 16 paliers. Le roll minimum est le pire cas, le maximum le meilleur. D'où l'affichage en fourchette et en probabilité de KO." },
+    { "q": "Le mode Duo et les dégâts de zone sont-ils gérés ?", "a": "Oui. Activez le format Duo et, si la capacité touche plusieurs cibles, cochez « capacité de zone » pour appliquer la réduction de 25&nbsp;% (×0,75) propre au VGC." },
+    { "q": "Les talents et objets sont-ils pris en compte ?", "a": "Oui : STAB et Adaptabilité, Multi-Écaille, Filtre/Solide Roc, Écailles Glacées, Massue, Orbe Vie, Bandeau Choix, Veste de Combat, Coup d'Main, champ, météo et plus encore. Nous en ajoutons régulièrement." },
+    { "q": "Pourquoi 32 SP maximum par statistique ?", "a": "C'est la limite du système de Champions, équivalente aux 252&nbsp;EV maximum des jeux principaux. Avec 66 SP au total, impossible de maximiser plus de deux stats complètes." }
+  ],
+  "glossaryTitle": "Petit glossaire",
+  "glossary": [
+    { "t": "STAB", "d": "Bonus de même type : ×1,5 aux dégâts si la capacité est du même type que l'attaquant." },
+    { "t": "Super efficace", "d": "La capacité inflige ×2 (ou ×4) de dégâts selon la table des types." },
+    { "t": "Pas très efficace", "d": "La capacité inflige ×0,5 (ou ×0,25) de dégâts." },
+    { "t": "OHKO / 2HKO", "d": "Mettre KO l'adversaire en un coup (OHKO) ou en deux (2HKO)." },
+    { "t": "Murs", "d": "Mur Lumière, Protection et Voile Aurore réduisent les dégâts subis." },
+    { "t": "Coup d'Main", "d": "L'allié augmente de ×1,5 la puissance de la capacité." }
+  ],
+  "footer": {
+    "disclaimer": "Outil non officiel créé par des fans. Pokémon et Pokémon Champions sont des marques de Nintendo, Game Freak et The Pokémon Company. Données de combat issues de sources publiques de la communauté.",
+    "data": "Données : roster et mécaniques de la régulation en cours.",
+    "langLabel": "Langue"
+  }
+}

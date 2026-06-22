@@ -1,0 +1,20 @@
+{
+  "name": "champions-damage",
+  "private": true,
+  "version": "0.1.0",
+  "type": "commonjs",
+  "scripts": {
+    "build:data": "node scripts/build-data.js",
+    "build:og": "node scripts/build-og.js",
+    "build:site": "node scripts/build-site.js",
+    "build": "node scripts/build-data.js && node scripts/build-og.js && node scripts/build-site.js",
+    "serve": "node scripts/serve.js",
+    "test": "node scripts/test-engine.js"
+  },
+  "devDependencies": {
+    "@smogon/calc": "^0.11.0",
+    "sharp": "^0.35.2"
+  },
+  "description": "Calculadora de daño de Pokémon Champions (ES/PT/FR/IT) — mobile-first, SEO, estática.",
+  "license": "MIT"
+}

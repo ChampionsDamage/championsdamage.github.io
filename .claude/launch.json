@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "champions-preview",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["scripts/serve.js"],
+      "port": 4178
+    }
+  ]
+}

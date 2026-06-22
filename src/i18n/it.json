@@ -1,0 +1,112 @@
+{
+  "lang": "it",
+  "locale": "it_IT",
+  "hreflang": "it",
+  "slug": "calcolatore-di-danni",
+  "name": "Italiano",
+  "meta": {
+    "title": "Calcolatore Danni Pokémon Champions — VGC Doppie & Mega",
+    "description": "Calcola danni e KO per Pokémon Champions nelle doppie VGC. Punti statistica (SP), nature, abilità, strumenti, meteo e Megaevoluzione al livello 50.",
+    "ogTitle": "Calcolatore di Danni — Pokémon Champions VGC",
+    "ogDescription": "I danni esatti, il range e la probabilità di KO per Pokémon Champions. SP, nature, strumenti e doppie VGC. Veloce e davvero in italiano."
+  },
+  "h1": "Calcolatore di danni Pokémon Champions",
+  "tagline": "Danni esatti, range e probabilità di KO per il VGC di Champions. Livello 50, sistema SP, lotte in doppio.",
+  "intro": "Questo è il <strong>calcolatore di danni di Pokémon Champions</strong> pensato per giocare in italiano: veloce, pulito e preciso al 100&nbsp;%. Scegli attaccante e difensore, distribuisci i loro <strong>Punti statistica (SP)</strong>, imposta natura, abilità, strumento, meteo e schermi, e ottieni subito il <strong>range di danno (16 roll)</strong> e la <strong>probabilità di KO</strong>. I numeri sono identici a quelli di Showdown — la formula è validata su di esso — solo che qui è tutto nella tua lingua, va dritto al punto e funziona alla perfezione su mobile.",
+  "ui": {
+    "attacker": "Attaccante",
+    "defender": "Difensore",
+    "selectPokemon": "Scegli un Pokémon",
+    "searchPokemon": "Cerca un Pokémon…",
+    "move": "Mossa",
+    "selectMove": "Scegli una mossa",
+    "level": "Livello",
+    "nature": "Natura",
+    "ability": "Abilità",
+    "item": "Strumento",
+    "teraType": "Tipo Teracristal",
+    "none": "Nessuno",
+    "statPoints": "Punti statistica (SP)",
+    "spRemaining": "SP disponibili",
+    "boosts": "Modifiche alle statistiche",
+    "status": "Stato",
+    "field": "Condizioni di lotta",
+    "weather": "Meteo",
+    "terrain": "Campo",
+    "format": "Formato",
+    "singles": "Singolo",
+    "doubles": "Doppio (VGC)",
+    "spreadMove": "Mossa ad area (colpisce più bersagli)",
+    "criticalHit": "Brutto colpo",
+    "helpingHand": "Aiutone",
+    "reflect": "Riflesso",
+    "lightScreen": "Schermoluce",
+    "auroraVeil": "Velaurora",
+    "friendGuard": "Alleato con Bodyguard",
+    "currentHP": "PS attuali del difensore",
+    "calculate": "Calcola danni",
+    "result": "Risultato",
+    "share": "Condividi calcolo",
+    "copied": "Link copiato!",
+    "swap": "Inverti attaccante e difensore",
+    "reset": "Reimposta",
+    "showAll": "Tutti i Pokémon",
+    "championsOnly": "Solo Champions (forme finali)",
+    "noDamage": "Questa mossa non infligge danni.",
+    "immune": "Il difensore è immune a questa mossa."
+  },
+  "stats": {
+    "hp": "PS",
+    "atk": "Attacco",
+    "def": "Difesa",
+    "spa": "Att. Speciale",
+    "spd": "Dif. Speciale",
+    "spe": "Velocità"
+  },
+  "weatherOpts": { "none": "Senza meteo", "sun": "Sole", "rain": "Pioggia", "sand": "Tempesta di sabbia", "snow": "Neve" },
+  "terrainOpts": { "none": "Senza campo", "electric": "Campo Elettrico", "grassy": "Campo Erboso", "psychic": "Campo Psichico", "misty": "Campo Nebbioso" },
+  "statusOpts": { "none": "In forma", "brn": "Scottatura", "par": "Paralisi", "psn": "Avvelenamento", "tox": "Avvelenamento grave" },
+  "effectiveness": {
+    "x4": "Estremamente efficace (×4)",
+    "x2": "Super efficace (×2)",
+    "x1": "Danno normale (×1)",
+    "x05": "Poco efficace (×0,5)",
+    "x025": "Molto poco efficace (×0,25)",
+    "x0": "Inefficace (×0)"
+  },
+  "ko": {
+    "guaranteedOHKO": "KO in un colpo garantito",
+    "chanceOHKO": "{pct} di KO in un colpo",
+    "guaranteedNHKO": "{n}HKO garantito",
+    "noDamage": "Nessun danno"
+  },
+  "sections": {
+    "spTitle": "Cosa sono i Punti statistica (SP) in Champions",
+    "spBody": "Pokémon Champions sostituisce i classici PA (EV) e PI (IV) con un sistema di <strong>Punti statistica (SP)</strong> molto più trasparente. Ogni Pokémon ha <strong>66 SP</strong> da distribuire, con un <strong>massimo di 32 SP per statistica</strong>, e non ci sono IV (sempre considerati 31). La conversione è diretta: <strong>1&nbsp;SP equivale a 8&nbsp;EV</strong>, quindi 32&nbsp;SP in una statistica equivalgono ai soliti 252&nbsp;EV. La distribuzione più comune —32 nella statistica offensiva e 32 in Velocità— consuma 64 dei 66 punti e ne lascia 2 per una terza. Questo calcolatore lavora direttamente in SP così vedi esattamente ciò che avrai in gioco.",
+    "howTitle": "Come si calcola il danno",
+    "howBody": "Il danno parte da una formula fissa (livello 50 in Champions) modificata da una catena di fattori: lo <strong>STAB</strong> (×1,5 se il tipo della mossa coincide con quello del Pokémon), l'<strong>efficacia dei tipi</strong>, il <strong>brutto colpo</strong> (×1,5), il <strong>meteo</strong>, il <strong>campo</strong>, gli <strong>schermi</strong>, gli <strong>strumenti</strong> e le <strong>abilità</strong>. Per la casualità interna, ogni colpo può assumere 16 valori (dall'85&nbsp;% al 100&nbsp;%): per questo mostriamo un <strong>range di danno</strong> e non un numero unico. Da quel range e dai PS del difensore calcoliamo la <strong>probabilità di KO</strong>.",
+    "faqTitle": "Domande frequenti"
+  },
+  "faq": [
+    { "q": "I numeri coincidono con quelli di Pokémon Showdown?", "a": "Sì. La formula è validata contro @smogon/calc (il motore di Showdown) su decine di scenari: STAB, efficacia, meteo, schermi, strumenti e abilità. Il danno è pura matematica, quindi il risultato è identico; la differenza è che qui è in italiano ed è più veloce su mobile." },
+    { "q": "Come converto i miei EV di Scarlatto/Violetto in SP?", "a": "Dividi gli EV per 8: 252&nbsp;EV ≈ 32&nbsp;SP, 4&nbsp;EV ≈ 1&nbsp;SP. Ricorda che in Champions il tetto per statistica è 32&nbsp;SP e il totale per Pokémon è 66&nbsp;SP." },
+    { "q": "Cos'è il range di danno e i 16 roll?", "a": "Ogni attacco applica un fattore casuale tra l'85&nbsp;% e il 100&nbsp;%, in 16 passi. Il roll minimo è il caso peggiore, il massimo il migliore. Per questo un calcolo si esprime come range e come probabilità di KO." },
+    { "q": "Include le lotte in doppio e i danni ad area?", "a": "Sì. Attiva il formato Doppio e, se la mossa colpisce più bersagli, spunta «mossa ad area» per applicare la riduzione del 25&nbsp;% (×0,75) tipica del VGC." },
+    { "q": "Tiene conto di abilità e strumenti?", "a": "Sì: STAB e Adattabilità, Multiscaglia, Filtro/Solidroccia, Geloscaglie, Squboss, Vitasfera, Cibofermo (Choice Band), Giubbotto Tattico, Aiutone, campo, meteo e altro. Continuiamo ad aggiungerne." },
+    { "q": "Perché il massimo è 32 SP per statistica?", "a": "È il limite del sistema di Champions, equivalente ai 252&nbsp;EV massimi dei giochi principali. Con 66 SP totali non puoi massimizzare più di due statistiche complete." }
+  ],
+  "glossaryTitle": "Glossario rapido",
+  "glossary": [
+    { "t": "STAB", "d": "Bonus di stesso tipo: ×1,5 al danno se la mossa è dello stesso tipo dell'attaccante." },
+    { "t": "Super efficace", "d": "La mossa infligge ×2 (o ×4) di danno per la tabella dei tipi." },
+    { "t": "Poco efficace", "d": "La mossa infligge ×0,5 (o ×0,25) di danno." },
+    { "t": "OHKO / 2HKO", "d": "Mandare KO l'avversario in un colpo (OHKO) o in due (2HKO)." },
+    { "t": "Schermi", "d": "Riflesso, Schermoluce e Velaurora riducono il danno subito." },
+    { "t": "Aiutone", "d": "L'alleato aumenta di ×1,5 la potenza della mossa." }
+  ],
+  "footer": {
+    "disclaimer": "Strumento non ufficiale creato dai fan. Pokémon e Pokémon Champions sono marchi di Nintendo, Game Freak e The Pokémon Company. Dati di lotta basati su fonti pubbliche della community.",
+    "data": "Dati: roster e meccaniche della regolazione in corso.",
+    "langLabel": "Lingua"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "lang": "pt",
+  "locale": "pt_BR",
+  "hreflang": "pt-BR",
+  "slug": "calculadora-de-dano",
+  "name": "Português",
+  "meta": {
+    "title": "Calculadora de Dano Pokémon Champions VGC 2026 | Chance de Nocaute",
+    "description": "Calcule o dano exato em Pokémon Champions: distribua seus Pontos de Atributo (SP), natureza, item e habilidade e veja o range de dano e a chance de nocaute em duplas VGC.",
+    "ogTitle": "Calculadora de Dano — Pokémon Champions VGC",
+    "ogDescription": "O dano exato, o range e a chance de nocaute para Pokémon Champions. SP, naturezas, itens, clima e duplas VGC. Rápida e em português de verdade."
+  },
+  "h1": "Calculadora de Dano de Pokémon Champions",
+  "tagline": "Dano exato, range e chance de nocaute para o VGC de Champions. Nível 50, sistema SP, batalhas em duplas.",
+  "intro": "Esta é a <strong>calculadora de dano de Pokémon Champions</strong> feita para jogar em português: rápida, limpa e 100&nbsp;% precisa. Escolha o atacante e o defensor, distribua os <strong>Pontos de Atributo (SP)</strong>, ajuste natureza, habilidade, item, clima e telas, e veja na hora o <strong>range de dano (16 rolagens)</strong> e a <strong>chance de nocaute</strong>. Os números são idênticos aos do Showdown — a fórmula é validada contra ele —, só que aqui está no seu idioma, vai direto ao ponto e funciona perfeitamente no celular.",
+  "ui": {
+    "attacker": "Atacante",
+    "defender": "Defensor",
+    "selectPokemon": "Escolha um Pokémon",
+    "searchPokemon": "Buscar Pokémon…",
+    "move": "Golpe",
+    "selectMove": "Escolha um golpe",
+    "level": "Nível",
+    "nature": "Natureza",
+    "ability": "Habilidade",
+    "item": "Item",
+    "teraType": "Teratipo",
+    "none": "Nenhum",
+    "statPoints": "Pontos de Atributo (SP)",
+    "spRemaining": "SP disponíveis",
+    "boosts": "Alterações de atributo",
+    "status": "Status",
+    "field": "Condições de batalha",
+    "weather": "Clima",
+    "terrain": "Terreno",
+    "format": "Formato",
+    "singles": "Simples",
+    "doubles": "Duplas (VGC)",
+    "spreadMove": "Golpe de área (atinge vários)",
+    "criticalHit": "Acerto crítico",
+    "helpingHand": "Helping Hand (Mãos Ajudantes)",
+    "reflect": "Tela Refletora",
+    "lightScreen": "Tela de Luz",
+    "auroraVeil": "Véu Aurora",
+    "friendGuard": "Aliado com Friend Guard",
+    "currentHP": "PS atuais do defensor",
+    "calculate": "Calcular dano",
+    "result": "Resultado",
+    "share": "Compartilhar cálculo",
+    "copied": "Link copiado!",
+    "swap": "Trocar atacante e defensor",
+    "reset": "Reiniciar",
+    "showAll": "Todos os Pokémon",
+    "championsOnly": "Só Champions (formas finais)",
+    "noDamage": "Este golpe não causa dano.",
+    "immune": "O defensor é imune a este golpe."
+  },
+  "stats": {
+    "hp": "PS",
+    "atk": "Ataque",
+    "def": "Defesa",
+    "spa": "Atq. Especial",
+    "spd": "Def. Especial",
+    "spe": "Velocidade"
+  },
+  "weatherOpts": { "none": "Sem clima", "sun": "Sol", "rain": "Chuva", "sand": "Tempestade de areia", "snow": "Neve" },
+  "terrainOpts": { "none": "Sem terreno", "electric": "Terreno Elétrico", "grassy": "Terreno de Grama", "psychic": "Terreno Psíquico", "misty": "Terreno de Névoa" },
+  "statusOpts": { "none": "Saudável", "brn": "Queimadura", "par": "Paralisia", "psn": "Envenenamento", "tox": "Envenenamento grave" },
+  "effectiveness": {
+    "x4": "Extremamente efetivo (×4)",
+    "x2": "Super efetivo (×2)",
+    "x1": "Dano normal (×1)",
+    "x05": "Pouco efetivo (×0,5)",
+    "x025": "Muito pouco efetivo (×0,25)",
+    "x0": "Sem efeito (×0)"
+  },
+  "ko": {
+    "guaranteedOHKO": "Nocaute de um golpe garantido",
+    "chanceOHKO": "{pct} de nocaute de um golpe",
+    "guaranteedNHKO": "{n}HKO garantido",
+    "noDamage": "Sem dano"
+  },
+  "sections": {
+    "spTitle": "O que são os Pontos de Atributo (SP) em Champions",
+    "spBody": "Pokémon Champions troca os EV e IV clássicos por um sistema de <strong>Pontos de Atributo (SP)</strong> muito mais transparente. Cada Pokémon tem <strong>66 SP</strong> para distribuir, com <strong>máximo de 32 SP por atributo</strong>, e não há IVs (equivalem sempre a 31). A conversão é direta: <strong>1&nbsp;SP equivale a 8&nbsp;EV</strong>, então 32&nbsp;SP em um atributo equivalem aos 252&nbsp;EV de sempre. A distribuição mais comum —32 no seu atributo ofensivo e 32 na Velocidade— gasta 64 dos 66 pontos e deixa 2 para um terceiro. Esta calculadora trabalha direto em SP para você ver exatamente o que verá dentro do jogo.",
+    "howTitle": "Como o dano é calculado",
+    "howBody": "O dano em Pokémon parte de uma fórmula fixa (nível 50 em Champions) e é ajustado por uma cadeia de fatores: <strong>STAB</strong> (×1,5 quando o tipo do golpe é igual ao do Pokémon), a <strong>efetividade de tipos</strong>, o <strong>acerto crítico</strong> (×1,5), o <strong>clima</strong>, o <strong>terreno</strong>, as <strong>telas</strong>, os <strong>itens</strong> e as <strong>habilidades</strong>. Pela aleatoriedade interna, cada golpe pode ter 16 valores (de 85&nbsp;% a 100&nbsp;%): por isso mostramos um <strong>range de dano</strong>, e não um número único. A partir desse range e dos PS do defensor calculamos a <strong>chance de nocaute</strong>.",
+    "faqTitle": "Perguntas frequentes"
+  },
+  "faq": [
+    { "q": "Os números batem com os do Pokémon Showdown?", "a": "Sim. A fórmula é validada contra o @smogon/calc (o motor do Showdown) em dezenas de cenários: STAB, efetividade, clima, telas, itens e habilidades. O dano é matemática pura, então o resultado é idêntico; a diferença é que aqui está em português e é mais rápida no celular." },
+    { "q": "Como converto meus EV de Scarlet/Violet em SP?", "a": "Divida os EV por 8: 252&nbsp;EV ≈ 32&nbsp;SP, 4&nbsp;EV ≈ 1&nbsp;SP. Lembre que em Champions o teto por atributo é 32&nbsp;SP e o total por Pokémon é 66&nbsp;SP." },
+    { "q": "O que é o range de dano e as 16 rolagens?", "a": "Cada golpe aplica um fator aleatório entre 85&nbsp;% e 100&nbsp;%, em 16 passos. A rolagem mínima é o pior caso e a máxima o melhor. Por isso um cálculo aparece como um range e como uma chance de nocaute." },
+    { "q": "Inclui batalhas em duplas e dano em área?", "a": "Sim. Ative o formato Duplas e, se o golpe atinge vários alvos, marque «golpe de área» para aplicar a redução de 25&nbsp;% (×0,75) típica do VGC." },
+    { "q": "Leva em conta habilidades e itens?", "a": "Sim: STAB e Adaptability, Multiscale, Filter/Solid Rock, Ice Scales, Thick Club, Life Orb, Choice Band, Assault Vest, Helping Hand, terreno, clima e mais. Continuamos adicionando casos." },
+    { "q": "Por que o máximo é 32 SP por atributo?", "a": "É o limite do sistema de Champions, equivalente aos 252&nbsp;EV máximos dos jogos principais. Com 66 SP no total, não dá para maximizar mais de dois atributos completos." }
+  ],
+  "glossaryTitle": "Glossário rápido",
+  "glossary": [
+    { "t": "STAB", "d": "Bônus de mesmo tipo: ×1,5 no dano quando o golpe é do mesmo tipo do atacante." },
+    { "t": "Super efetivo", "d": "O golpe causa ×2 (ou ×4) de dano pela tabela de tipos." },
+    { "t": "Pouco efetivo", "d": "O golpe causa ×0,5 (ou ×0,25) de dano." },
+    { "t": "OHKO / 2HKO", "d": "Nocautear o rival em um golpe (OHKO) ou em dois (2HKO)." },
+    { "t": "Telas", "d": "Tela Refletora, Tela de Luz e Véu Aurora reduzem o dano recebido." },
+    { "t": "Helping Hand", "d": "O aliado aumenta ×1,5 a potência do golpe." }
+  ],
+  "footer": {
+    "disclaimer": "Ferramenta não oficial feita por fãs. Pokémon e Pokémon Champions são marcas da Nintendo, Game Freak e The Pokémon Company. Dados de batalha baseados em fontes públicas da comunidade.",
+    "data": "Dados: roster e mecânicas da regulação vigente.",
+    "langLabel": "Idioma"
+  }
+}

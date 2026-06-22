@@ -1,0 +1,112 @@
+{
+  "lang": "es",
+  "locale": "es_ES",
+  "hreflang": "es",
+  "slug": "calculadora-de-dano",
+  "name": "Español",
+  "meta": {
+    "title": "Calculadora de Daño Pokémon Champions VGC 2026 | Cálculo de KO",
+    "description": "Calcula el daño exacto en Pokémon Champions: reparte tus Puntos de Estadística (SP), naturaleza, objeto y habilidad y mira el rango de daño y la probabilidad de KO en dobles VGC.",
+    "ogTitle": "Calculadora de Daño — Pokémon Champions VGC",
+    "ogDescription": "El daño exacto, el rango y la probabilidad de KO para Pokémon Champions. SP, naturalezas, objetos, clima y dobles VGC. Rápida y en español de verdad."
+  },
+  "h1": "Calculadora de Daño de Pokémon Champions",
+  "tagline": "Daño exacto, rango y probabilidad de KO para el VGC de Champions. Nivel 50, sistema SP, combates dobles.",
+  "intro": "Esta es la <strong>calculadora de daño de Pokémon Champions</strong> pensada para jugar en español: rápida, clara y precisa al 100&nbsp;%. Elige atacante y defensor, reparte sus <strong>Puntos de Estadística (SP)</strong>, ajusta naturaleza, habilidad, objeto, clima y pantallas, y verás al instante el <strong>rango de daño (16 tiradas)</strong> y la <strong>probabilidad de KO</strong>. Los números son idénticos a los de Showdown porque la fórmula está validada contra ella; lo que cambia es que aquí está en tu idioma, va al grano y funciona perfecta en el móvil.",
+  "ui": {
+    "attacker": "Atacante",
+    "defender": "Defensor",
+    "selectPokemon": "Elige un Pokémon",
+    "searchPokemon": "Buscar Pokémon…",
+    "move": "Movimiento",
+    "selectMove": "Elige un movimiento",
+    "level": "Nivel",
+    "nature": "Naturaleza",
+    "ability": "Habilidad",
+    "item": "Objeto",
+    "teraType": "Teratipo",
+    "none": "Ninguno",
+    "statPoints": "Puntos de Estadística (SP)",
+    "spRemaining": "SP disponibles",
+    "boosts": "Cambios de estadística",
+    "status": "Estado",
+    "field": "Condiciones de combate",
+    "weather": "Clima",
+    "terrain": "Campo",
+    "format": "Formato",
+    "singles": "Individuales",
+    "doubles": "Dobles (VGC)",
+    "spreadMove": "Movimiento en área (golpea a varios)",
+    "criticalHit": "Golpe crítico",
+    "helpingHand": "Refuerzo (Helping Hand)",
+    "reflect": "Reflejo",
+    "lightScreen": "Pantalla Luz",
+    "auroraVeil": "Velo Aurora",
+    "friendGuard": "Aliado con Cuidado Amigo",
+    "currentHP": "PS actuales del defensor",
+    "calculate": "Calcular daño",
+    "result": "Resultado",
+    "share": "Compartir cálculo",
+    "copied": "¡Enlace copiado!",
+    "swap": "Intercambiar atacante y defensor",
+    "reset": "Reiniciar",
+    "showAll": "Todos los Pokémon",
+    "championsOnly": "Solo Champions (formas finales)",
+    "noDamage": "Este movimiento no causa daño.",
+    "immune": "El defensor es inmune a este movimiento."
+  },
+  "stats": {
+    "hp": "PS",
+    "atk": "Ataque",
+    "def": "Defensa",
+    "spa": "At. Especial",
+    "spd": "Def. Especial",
+    "spe": "Velocidad"
+  },
+  "weatherOpts": { "none": "Sin clima", "sun": "Sol", "rain": "Lluvia", "sand": "Tormenta de arena", "snow": "Nieve" },
+  "terrainOpts": { "none": "Sin campo", "electric": "Campo Eléctrico", "grassy": "Campo de Hierba", "psychic": "Campo Psíquico", "misty": "Campo de Niebla" },
+  "statusOpts": { "none": "Sano", "brn": "Quemadura", "par": "Parálisis", "psn": "Envenenamiento", "tox": "Envenenamiento grave" },
+  "effectiveness": {
+    "x4": "Increíblemente eficaz (×4)",
+    "x2": "Supereficaz (×2)",
+    "x1": "Daño normal (×1)",
+    "x05": "Poco eficaz (×0,5)",
+    "x025": "Muy poco eficaz (×0,25)",
+    "x0": "Sin efecto (×0)"
+  },
+  "ko": {
+    "guaranteedOHKO": "KO de un golpe garantizado",
+    "chanceOHKO": "{pct} de KO de un golpe",
+    "guaranteedNHKO": "{n}HKO garantizado",
+    "noDamage": "Sin daño"
+  },
+  "sections": {
+    "spTitle": "Qué son los Puntos de Estadística (SP) en Champions",
+    "spBody": "Pokémon Champions sustituye los EV e IV clásicos por un sistema de <strong>Puntos de Estadística (SP)</strong> mucho más transparente. Cada Pokémon dispone de <strong>66 SP</strong> para repartir, con un <strong>máximo de 32 SP por estadística</strong>, y no hay IVs (equivalen siempre a 31). La conversión es directa: <strong>1&nbsp;SP equivale a 8&nbsp;EV</strong>, así que 32&nbsp;SP en una estadística equivalen a los 252&nbsp;EV de toda la vida. El reparto más típico —32 en tu estadística ofensiva y 32 en Velocidad— gasta 64 de los 66 puntos y deja 2 para una tercera. Esta calculadora trabaja directamente en SP para que veas exactamente lo que verás dentro del juego.",
+    "howTitle": "Cómo se calcula el daño",
+    "howBody": "El daño en Pokémon parte de una fórmula fija (nivel 50 en Champions) y se modifica por una cadena de factores: <strong>STAB</strong> (×1,5 si el tipo del movimiento coincide con el del Pokémon), la <strong>efectividad de tipos</strong>, el <strong>golpe crítico</strong> (×1,5), el <strong>clima</strong>, el <strong>campo</strong>, las <strong>pantallas</strong>, los <strong>objetos</strong> y las <strong>habilidades</strong>. Por la aleatoriedad interna, cada golpe puede tener 16 valores distintos (del 85&nbsp;% al 100&nbsp;%): por eso mostramos un <strong>rango de daño</strong> y no un único número. A partir de ese rango y de los PS del defensor calculamos la <strong>probabilidad de KO</strong>.",
+    "faqTitle": "Preguntas frecuentes"
+  },
+  "faq": [
+    { "q": "¿Los números coinciden con los de Pokémon Showdown?", "a": "Sí. La fórmula está validada contra @smogon/calc (el motor de Showdown) en decenas de escenarios: STAB, efectividad, clima, pantallas, objetos y habilidades. El daño es matemática pura, así que el resultado es idéntico; la diferencia es que aquí está en español y es más rápida en el móvil." },
+    { "q": "¿Cómo paso mis EV de Escarlata/Púrpura a SP?", "a": "Divide los EV entre 8: 252&nbsp;EV ≈ 32&nbsp;SP, 4&nbsp;EV ≈ 1&nbsp;SP. Recuerda que en Champions el tope por estadística es 32&nbsp;SP y el total por Pokémon es 66&nbsp;SP." },
+    { "q": "¿Qué es el rango de daño y las 16 tiradas?", "a": "Cada ataque aplica un factor aleatorio entre el 85&nbsp;% y el 100&nbsp;%, en 16 pasos. La tirada mínima es el peor caso y la máxima el mejor. Por eso un cálculo se expresa como un rango y como una probabilidad de KO." },
+    { "q": "¿Incluye combates dobles y daño en área?", "a": "Sí. Activa el formato Dobles y, si el movimiento golpea a varios objetivos, marca «movimiento en área» para aplicar la reducción del 25&nbsp;% (×0,75) propia del VGC." },
+    { "q": "¿Tiene en cuenta habilidades y objetos?", "a": "Sí: STAB y Adaptabilidad, Multiescama, Filtro/Roca Sólida, Cristal Endeble, Mazo Grueso, Vidasfera, Cinta Elección, Chaleco Asalto, Refuerzo, terreno, clima y más. Seguimos añadiendo casos." },
+    { "q": "¿Por qué hay un máximo de 32 SP por estadística?", "a": "Es el límite del sistema de Champions, equivalente a los 252&nbsp;EV máximos de los juegos principales. Con 66 SP totales no puedes maximizar más de dos estadísticas completas." }
+  ],
+  "glossaryTitle": "Glosario rápido",
+  "glossary": [
+    { "t": "STAB", "d": "Bonificación por tipo: ×1,5 al daño si el movimiento es del mismo tipo que el atacante." },
+    { "t": "Supereficaz", "d": "El movimiento hace ×2 (o ×4) de daño por la tabla de tipos." },
+    { "t": "Poco eficaz", "d": "El movimiento hace ×0,5 (o ×0,25) de daño." },
+    { "t": "OHKO / 2HKO", "d": "Debilitar al rival de un golpe (OHKO) o de dos (2HKO)." },
+    { "t": "Pantallas", "d": "Reflejo, Pantalla Luz y Velo Aurora reducen el daño recibido." },
+    { "t": "Refuerzo", "d": "Helping Hand: el aliado aumenta ×1,5 la potencia del movimiento." }
+  ],
+  "footer": {
+    "disclaimer": "Herramienta no oficial creada por fans. Pokémon y Pokémon Champions son marcas de Nintendo, Game Freak y The Pokémon Company. Datos de combate basados en fuentes públicas de la comunidad.",
+    "data": "Datos: roster y mecánicas de la regulación vigente.",
+    "langLabel": "Idioma"
+  }
+}
