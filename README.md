@@ -1,4 +1,4 @@
-# ChampionsDmg — Calculadora de daño de Pokémon Champions
+# ChampionsDamage — Calculadora de daño de Pokémon Champions
 
 Calculadora de daño para **Pokémon Champions** (nivel 50, sistema **SP**, dobles VGC)
 en **4 idiomas nativos**: español, português (BR), français e italiano.

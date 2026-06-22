@@ -4,9 +4,9 @@
   "contactNav": "Contato",
   "title": "Aviso legal, privacidade e cookies",
   "updatedLabel": "Última atualização",
-  "metaDescription": "Aviso legal, política de privacidade e cookies do ChampionsDmg, a calculadora de dano de Pokémon Champions.",
+  "metaDescription": "Aviso legal, política de privacidade e cookies do ChampionsDamage, a calculadora de dano de Pokémon Champions.",
   "sections": [
-    { "h": "Quem somos", "html": "ChampionsDmg é uma ferramenta gratuita feita por fãs que calcula o dano em Pokémon Champions. Não temos vínculo com a Nintendo, a Game Freak nem a The Pokémon Company. «Pokémon» e «Pokémon Champions» são marcas de seus respectivos proprietários." },
+    { "h": "Quem somos", "html": "ChampionsDamage é uma ferramenta gratuita feita por fãs que calcula o dano em Pokémon Champions. Não temos vínculo com a Nintendo, a Game Freak nem a The Pokémon Company. «Pokémon» e «Pokémon Champions» são marcas de seus respectivos proprietários." },
     { "h": "Privacidade", "html": "Não pedimos cadastro nem coletamos dados pessoais para usar a calculadora. As preferências e os cálculos ficam guardados no seu próprio navegador (na URL e no armazenamento local); não são enviados a nenhum servidor nosso." },
     { "h": "Cookies e publicidade", "html": "Para manter o projeto, podemos exibir anúncios via <strong>Google AdSense</strong>. O Google e seus parceiros podem usar cookies para exibir anúncios com base nas suas visitas a este e a outros sites. Você pode gerenciar a personalização de anúncios nas <a href=\"https://www.google.com/settings/ads\" rel=\"nofollow noopener\" target=\"_blank\">configurações de anúncios do Google</a> e saber mais nas <a href=\"https://policies.google.com/technologies/partner-sites\" rel=\"nofollow noopener\" target=\"_blank\">políticas de parceiros do Google</a>. Se você nos visitar da União Europeia, pediremos consentimento antes de carregar cookies não essenciais." },
     { "h": "Análise de tráfego", "html": "Se ativarmos a medição de tráfego, será de forma agregada e anônima, sem identificar você pessoalmente." },

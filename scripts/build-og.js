@@ -61,7 +61,7 @@ function svg(t) {
   <g transform="translate(80,90)">
     <circle cx="22" cy="14" r="22" fill="#ffcb05" stroke="#000" stroke-width="4"/>
     <rect x="0" y="11" width="44" height="6" fill="#000"/>
-    <text x="62" y="24" font-size="30" font-weight="800" fill="#ffcb05" font-family="Arial, sans-serif">ChampionsDmg</text>
+    <text x="62" y="24" font-size="30" font-weight="800" fill="#ffcb05" font-family="Arial, sans-serif">ChampionsDamage</text>
   </g>
   ${titleTspans}
   <text x="80" y="${ty + titleLines.length * 78 - 6}" font-size="28" fill="#9aa3c7" font-family="Arial, sans-serif">${esc(t.tagline.slice(0, 64))}</text>

@@ -115,7 +115,7 @@ ${hreflangs}
 <body>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="/${lang}/${t.slug}/"><span class="dot"></span> <span>Champions<b>Dmg</b></span></a>
+    <a class="brand" href="/${lang}/${t.slug}/"><span class="dot"></span> <span>Champions<b>Damage</b></span></a>
     <div class="lang">
       <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">🌐 ${i18n[lang].name} ▾</button>
       <nav class="lang-menu" id="langMenu" aria-label="${esc(t.footer.langLabel)}">${langMenu}</nav>
@@ -224,7 +224,7 @@ function legalHTML(lang) {
 </head>
 <body>
 <header class="site-header"><div class="wrap">
-  <a class="brand" href="/${lang}/${t.slug}/"><span class="dot"></span> <span>Champions<b>Dmg</b></span></a>
+  <a class="brand" href="/${lang}/${t.slug}/"><span class="dot"></span> <span>Champions<b>Damage</b></span></a>
   <div class="lang"><nav class="lang-menu open" style="position:static;display:flex;gap:6px;background:transparent;border:0;box-shadow:none;padding:0">${langMenu}</nav></div>
 </div></header>
 <main class="wrap content" style="max-width:760px">

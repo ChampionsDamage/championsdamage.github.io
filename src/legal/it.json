@@ -4,9 +4,9 @@
   "contactNav": "Contatti",
   "title": "Note legali, privacy e cookie",
   "updatedLabel": "Ultimo aggiornamento",
-  "metaDescription": "Note legali, informativa sulla privacy e cookie di ChampionsDmg, il calcolatore di danni di Pokémon Champions.",
+  "metaDescription": "Note legali, informativa sulla privacy e cookie di ChampionsDamage, il calcolatore di danni di Pokémon Champions.",
   "sections": [
-    { "h": "Chi siamo", "html": "ChampionsDmg è uno strumento gratuito creato dai fan che calcola i danni in Pokémon Champions. Non siamo affiliati a Nintendo, Game Freak o The Pokémon Company. «Pokémon» e «Pokémon Champions» sono marchi dei rispettivi proprietari." },
+    { "h": "Chi siamo", "html": "ChampionsDamage è uno strumento gratuito creato dai fan che calcola i danni in Pokémon Champions. Non siamo affiliati a Nintendo, Game Freak o The Pokémon Company. «Pokémon» e «Pokémon Champions» sono marchi dei rispettivi proprietari." },
     { "h": "Privacy", "html": "Non è richiesta alcuna registrazione e non raccogliamo dati personali per usare il calcolatore. Le preferenze e i calcoli vengono salvati nel tuo browser (nell'URL e nella memoria locale); non vengono inviati ad alcun nostro server." },
     { "h": "Cookie e pubblicità", "html": "Per sostenere il progetto possiamo mostrare annunci tramite <strong>Google AdSense</strong>. Google e i suoi partner possono usare cookie per mostrare annunci in base alle tue visite a questo e ad altri siti. Puoi gestire la personalizzazione degli annunci nelle <a href=\"https://www.google.com/settings/ads\" rel=\"nofollow noopener\" target=\"_blank\">impostazioni annunci di Google</a> e saperne di più nelle <a href=\"https://policies.google.com/technologies/partner-sites\" rel=\"nofollow noopener\" target=\"_blank\">norme per i siti dei partner di Google</a>. Se ci visiti dall'Unione Europea, chiederemo il consenso prima di caricare cookie non essenziali." },
     { "h": "Analisi del traffico", "html": "Se attiveremo una misurazione del traffico, sarà in forma aggregata e anonima, senza identificarti personalmente." },
