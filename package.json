@@ -7,9 +7,10 @@
     "build:data": "node scripts/build-data.js",
     "build:og": "node scripts/build-og.js",
     "build:site": "node scripts/build-site.js",
-    "build": "node scripts/build-data.js && node scripts/build-og.js && node scripts/build-site.js",
+    "build": "node scripts/build-data.js && node scripts/build-names.js && node scripts/build-og.js && node scripts/build-site.js",
     "serve": "node scripts/serve.js",
-    "test": "node scripts/test-engine.js"
+    "test": "node scripts/test-engine.js",
+    "build:names": "node scripts/build-names.js"
   },
   "devDependencies": {
     "@smogon/calc": "^0.11.0",

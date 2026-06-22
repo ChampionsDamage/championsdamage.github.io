@@ -108,5 +108,32 @@
     "disclaimer": "Herramienta no oficial creada por fans. Pokémon y Pokémon Champions son marcas de Nintendo, Game Freak y The Pokémon Company. Datos de combate basados en fuentes públicas de la comunidad.",
     "data": "Datos: roster y mecánicas de la regulación vigente.",
     "langLabel": "Idioma"
+  },
+  "nav": { "calculator": "Calculadora", "resources": "Recursos", "types": "Tabla de tipos", "natures": "Naturalezas" },
+  "consent": {
+    "text": "Usamos cookies para mostrar anuncios y mantener la herramienta gratuita.",
+    "accept": "Aceptar",
+    "reject": "Rechazar",
+    "more": "Más información"
+  },
+  "cluster": {
+    "types": {
+      "slug": "tabla-de-tipos",
+      "title": "Tabla de Tipos de Pokémon Champions | Efectividad y Debilidades",
+      "description": "Tabla de tipos completa de Pokémon Champions: efectividad, debilidades y resistencias. Mira qué es supereficaz, poco eficaz o sin efecto contra cada tipo.",
+      "h1": "Tabla de tipos de Pokémon Champions",
+      "intro": "Consulta la <strong>tabla de tipos</strong> al completo: cruza el tipo del ataque (filas) con el tipo del defensor (columnas) para ver la <strong>efectividad</strong>. Verde = supereficaz (×2), rojo = poco eficaz (×0,5) y gris = sin efecto (×0). Es la base de cada cálculo de daño en Champions.",
+      "rowLabel": "Ataque ↓ / Defensa →",
+      "back": "Abrir la calculadora de daño"
+    },
+    "natures": {
+      "slug": "naturalezas",
+      "title": "Naturalezas de Pokémon: tabla completa | Champions",
+      "description": "Todas las naturalezas de Pokémon y cómo modifican las estadísticas (+10 % / −10 %). Tabla rápida para elegir la mejor naturaleza en Champions.",
+      "h1": "Naturalezas de Pokémon",
+      "intro": "Cada <strong>naturaleza</strong> sube una estadística un 10 % y baja otra un 10 % (las naturalezas neutras no cambian nada). Elegir bien la naturaleza es clave para maximizar daño o velocidad. Aquí tienes la tabla completa.",
+      "colNature": "Naturaleza", "colRaises": "Sube (+10 %)", "colLowers": "Baja (−10 %)", "neutral": "Neutra",
+      "back": "Abrir la calculadora de daño"
+    }
   }
 }

@@ -81,18 +81,22 @@ aún puede evolucionar se excluye). Es una aproximación al roster legal.
    Si usas una *project page* en subcarpeta, habría que prefijar las rutas
    absolutas (`/assets`, `/data`) con la base.
 
-## Pendientes recomendados antes de monetizar (no bloquean el MVP)
+## Estado de los extras
 
-- [ ] **Nombres de entidades localizados** (Pokémon/movimientos/objetos por idioma).
-      Ahora se muestran en inglés, que la comunidad competitiva reconoce y suele
-      usar (PT/IT/FR hacen *code-switching*). Mejorable con datos de PokéAPI/`@pkmn`.
-- [ ] **Lista exacta de legalidad de Reg M-B** (las 233 especies / 76 Megas) como
-      `data/regulations.json`, para sustituir la aproximación «formas finales».
-- [ ] **Código de AdSense + banner de consentimiento (CMP)** para la UE. Ahora la
-      web **no** carga cookies ni analítica; la política de privacidad ya menciona
-      AdSense para cuando se active.
-- [ ] Páginas de clúster (tabla de tipos, naturalezas, speed tiers) enlazadas a la
-      calculadora — gran volumen informacional, hoy en manos de wikis.
+- [x] **Nombres de entidades localizados** (Pokémon/movimientos/objetos/habilidades/
+      tipos por idioma) desde PokéAPI/veekun → `data/names-<lang>.json`. FR localiza
+      todo (Dracaufeu, Séisme); ES/IT localizan movimientos/objetos/tipos y mantienen
+      los nombres de Pokémon en inglés (que es lo oficial); PT añade tipos en PT-BR.
+      Regenera con `npm run build:names`. La búsqueda acepta nombre nativo e inglés.
+- [x] **Páginas de clúster** tabla de tipos (`/<l>/tabla-de-tipos`…) y naturalezas
+      (`/<l>/naturalezas`…) en los 4 idiomas, enlazadas en el subnav y el sitemap.
+- [x] **Banner de consentimiento + carga diferida de AdSense**: rellena
+      `adsenseClient` en `site.config.json`. Si está vacío, **no** se carga ningún
+      script ni cookie y el banner no aparece (estado actual, 100 % cookie-free).
+- [ ] **Lista exacta de legalidad de Reg M-B** (las 233 especies / 76 Megas). Sigue
+      usándose la aproximación «formas finales» (flag `evo`); no se incluye una lista
+      «exacta» inventada — falta una fuente pública en JSON fiable para clavarla.
+- [ ] Página de *speed tiers* (velocidad por roster) — siguiente clúster sugerido.
 
 ## Aviso
 

@@ -6,5 +6,6 @@
   "languages": ["es", "pt", "fr", "it"],
   "regulation": "M-B",
   "contactEmail": "contacto@championsdamage.example",
-  "lastUpdated": "2026-06-22"
+  "lastUpdated": "2026-06-22",
+  "adsenseClient": ""
 }

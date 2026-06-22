@@ -25,6 +25,24 @@
   }
   function toID(s){ return String(s||'').toLowerCase().replace(/[^a-z0-9]+/g,''); }
 
+  // localized display name (falls back to the English name when none exists)
+  function localName(kind, english) {
+    var n = DATA.names && DATA.names[kind];
+    if (!n) return english;
+    return n[toID(english)] || english;
+  }
+  // localized name for a species, handling formes (e.g. "Charizard-Mega-X")
+  function pkmnName(p) {
+    var direct = localName('pokemon', p.name);
+    if (direct !== p.name) return direct;
+    if (p.baseSpecies && p.baseSpecies !== p.name) {
+      var baseLocal = localName('pokemon', p.baseSpecies);
+      if (baseLocal !== p.baseSpecies) return p.name.replace(p.baseSpecies, baseLocal);
+    }
+    return p.name;
+  }
+  function typeName(t) { return localName('type', t); }
+
   // ---- per-side UI state ----
   function newSide(role) {
     return { role: role, id: null, nature: 'hardy', ability: '', item: '',
@@ -42,10 +60,12 @@
   function loadData() {
     var base = window.DATA_BASE || '/data/';
     var files = ['pokemon','moves','abilities','items','natures','typechart','meta'];
-    return Promise.all(files.map(function (f) {
-      return fetch(base + f + '.json').then(function (r) { return r.json(); });
+    var all = files.concat(['names-' + LANG]);
+    return Promise.all(all.map(function (f) {
+      return fetch(base + f + '.json').then(function (r) { return r.json(); }).catch(function () { return {}; });
     })).then(function (res) {
       files.forEach(function (f, i) { DATA[f] = res[i]; });
+      DATA.names = res[files.length] || {};
       E.setTypeChart(DATA.typechart);
       DATA.pokemonList = Object.values(DATA.pokemon).sort(function (a, b) {
         return a.name.localeCompare(b.name);
@@ -77,7 +97,7 @@
         if (it.types) {
           var tw = el('span', null, '');
           it.types.forEach(function (t) {
-            tw.appendChild(el('span', { class: 'type', style: 'background:' + (TYPE_COLORS[t]||'#888') }, t));
+            tw.appendChild(el('span', { class: 'type', style: 'background:' + (TYPE_COLORS[t]||'#888') }, typeName(t)));
           });
           tw.style.marginLeft = 'auto'; tw.style.display = 'flex'; tw.style.gap = '4px';
           o.appendChild(tw);
@@ -127,9 +147,9 @@
         q = toID(q);
         var arr = DATA.pokemonList.filter(function (p) {
           if (side._champOnly && (p.evo || p.mega)) return false;
-          return !q || toID(p.name).indexOf(q) !== -1;
+          return !q || toID(p.name).indexOf(q) !== -1 || toID(pkmnName(p)).indexOf(q) !== -1;
         });
-        return arr.map(function (p) { return { id: p.id, name: p.name, types: p.types }; });
+        return arr.map(function (p) { return { id: p.id, name: pkmnName(p), types: p.types }; });
       },
       onPick: function (it) { setSpecies(side, it.id); }
     });
@@ -151,7 +171,7 @@
 
     // types
     var tw = el('div', { class: 'types' });
-    p.types.forEach(function (t) { tw.appendChild(el('span', { class:'type', style:'background:'+(TYPE_COLORS[t]||'#888') }, t)); });
+    p.types.forEach(function (t) { tw.appendChild(el('span', { class:'type', style:'background:'+(TYPE_COLORS[t]||'#888') }, typeName(t))); });
     d.appendChild(tw);
 
     // move (attacker only)
@@ -161,12 +181,13 @@
         placeholder: T.ui.selectMove,
         getItems: function (q) {
           q = toID(q);
-          return DATA.moveList.filter(function (m) { return !q || toID(m.name).indexOf(q) !== -1; })
-            .map(function (m) { return { id: m.id, name: m.name + ' · ' + m.bp, types: [m.type], _m: m }; });
+          return DATA.moveList.filter(function (m) {
+            return !q || toID(m.name).indexOf(q) !== -1 || toID(localName('move', m.name)).indexOf(q) !== -1;
+          }).map(function (m) { return { id: m.id, name: localName('move', m.name) + ' · ' + m.bp, types: [m.type], _m: m }; });
         },
         onPick: function (it) { state.move = DATA.moves[it.id]; autoSpread(); recalc(); }
       });
-      if (state.move) mcb.setValue(state.move.name + ' · ' + state.move.bp);
+      if (state.move) mcb.setValue(localName('move', state.move.name) + ' · ' + state.move.bp);
       d.appendChild(mcb);
     }
 
@@ -268,17 +289,17 @@
     return Object.keys(DATA.natures).map(function (id) {
       var n = DATA.natures[id]; var suffix = '';
       if (n.plus && n.minus) suffix = ' (+' + T.stats[n.plus] + ' / −' + T.stats[n.minus] + ')';
-      return { v: id, t: cap(id) + suffix };
+      return { v: id, t: localName('nature', cap(id)) + suffix };
     });
   }
   function abilityOptions(p) {
     var opts = [{ v:'', t: T.ui.none }];
-    (p.ab || []).forEach(function (name) { opts.push({ v: toID(name), t: name }); });
+    (p.ab || []).forEach(function (name) { opts.push({ v: toID(name), t: localName('ability', name) }); });
     return opts;
   }
   function itemOptions() {
     var opts = [{ v:'', t: T.ui.none }];
-    DATA.itemList.forEach(function (it) { opts.push({ v: it.id, t: it.name }); });
+    DATA.itemList.forEach(function (it) { opts.push({ v: it.id, t: localName('item', it.name) }); });
     return opts;
   }
   function statusOptions() {
@@ -289,7 +310,7 @@
   }
   function teraOptions() {
     var a = [{ v:'', t: T.ui.none }];
-    DATA.meta.types.forEach(function (t) { a.push({ v:t, t:t }); });
+    DATA.meta.types.forEach(function (t) { a.push({ v:t, t:typeName(t) }); });
     return a;
   }
   function cap(s){ return s.charAt(0).toUpperCase()+s.slice(1); }
@@ -308,7 +329,7 @@
     }
     side.ability = p.ab && p.ab.length ? toID(p.ab[0]) : '';
     side.curHP = null;
-    side._cb.setValue(p.name);
+    side._cb.setValue(pkmnName(p));
     renderSideDetail(side);
     recalc();
   }
@@ -419,7 +440,7 @@
     }
     var html = '';
     html += '<div class="eff" style="color:'+ef.c+'">'+ef.t+'</div>';
-    html += '<div class="headline">'+p.name+' → '+dp.name+'</div>';
+    html += '<div class="headline">'+pkmnName(p)+' → '+pkmnName(dp)+'</div>';
     html += '<div class="range">'+minD+'–'+maxD+' '+T.stats.hp+'  ('+minPct.toFixed(1)+'% – '+maxPct.toFixed(1)+'%)</div>';
     html += '<div class="bar"><span style="width:'+Math.min(100,maxPct)+'%"></span><i class="min" style="left:'+Math.min(100,minPct)+'%;width:2px"></i></div>';
     html += '<div class="ko '+koClass+'">'+koTxt+'</div>';
@@ -508,8 +529,8 @@
       buildField($('#field-host'));
       if (decodeURL()) {
         // re-render with restored state
-        if (state.attacker.id) { state.attacker._cb.setValue(DATA.pokemon[state.attacker.id].name); renderSideDetail(state.attacker); }
-        if (state.defender.id) { state.defender._cb.setValue(DATA.pokemon[state.defender.id].name); renderSideDetail(state.defender); }
+        if (state.attacker.id) { state.attacker._cb.setValue(pkmnName(DATA.pokemon[state.attacker.id])); renderSideDetail(state.attacker); }
+        if (state.defender.id) { state.defender._cb.setValue(pkmnName(DATA.pokemon[state.defender.id])); renderSideDetail(state.defender); }
         buildField($('#field-host'));
         recalc();
       } else {

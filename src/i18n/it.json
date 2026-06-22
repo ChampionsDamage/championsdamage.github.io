@@ -108,5 +108,32 @@
     "disclaimer": "Strumento non ufficiale creato dai fan. Pokémon e Pokémon Champions sono marchi di Nintendo, Game Freak e The Pokémon Company. Dati di lotta basati su fonti pubbliche della community.",
     "data": "Dati: roster e meccaniche della regolazione in corso.",
     "langLabel": "Lingua"
+  },
+  "nav": { "calculator": "Calcolatore", "resources": "Risorse", "types": "Tabella dei tipi", "natures": "Nature" },
+  "consent": {
+    "text": "Usiamo i cookie per mostrare annunci e mantenere lo strumento gratuito.",
+    "accept": "Accetta",
+    "reject": "Rifiuta",
+    "more": "Scopri di più"
+  },
+  "cluster": {
+    "types": {
+      "slug": "tabella-dei-tipi",
+      "title": "Tabella dei Tipi Pokémon Champions | Efficacia e Debolezze",
+      "description": "Tabella dei tipi completa di Pokémon Champions: efficacia, debolezze e resistenze. Scopri cosa è super efficace, poco efficace o inefficace contro ogni tipo.",
+      "h1": "Tabella dei tipi Pokémon Champions",
+      "intro": "Consulta la <strong>tabella dei tipi</strong> completa: incrocia il tipo della mossa (righe) con il tipo del difensore (colonne) per vedere l'<strong>efficacia</strong>. Verde = super efficace (×2), rosso = poco efficace (×0,5) e grigio = inefficace (×0). È la base di ogni calcolo di danni in Champions.",
+      "rowLabel": "Mossa ↓ / Difesa →",
+      "back": "Apri il calcolatore di danni"
+    },
+    "natures": {
+      "slug": "nature",
+      "title": "Nature Pokémon: tabella completa | Champions",
+      "description": "Tutte le nature Pokémon e come modificano le statistiche (+10 % / −10 %). Tabella rapida per scegliere la natura migliore in Champions.",
+      "h1": "Nature Pokémon",
+      "intro": "Ogni <strong>natura</strong> aumenta una statistica del 10 % e ne riduce un'altra del 10 % (le nature neutre non cambiano nulla). Scegliere bene la natura è fondamentale per massimizzare danni o velocità. Ecco la tabella completa.",
+      "colNature": "Natura", "colRaises": "Aumenta (+10 %)", "colLowers": "Riduce (−10 %)", "neutral": "Neutra",
+      "back": "Apri il calcolatore di danni"
+    }
   }
 }

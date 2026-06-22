@@ -16,10 +16,23 @@ const SITE = cfg.url.replace(/\/$/, '');
 
 const i18n = {};
 const legal = {};
+const names = {};
 cfg.languages.forEach((l) => {
   i18n[l] = JSON.parse(fs.readFileSync(path.join(SRC, 'i18n', l + '.json'), 'utf8'));
   legal[l] = JSON.parse(fs.readFileSync(path.join(SRC, 'legal', l + '.json'), 'utf8'));
+  try { names[l] = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'names-' + l + '.json'), 'utf8')); }
+  catch (e) { names[l] = {}; }
 });
+const D = {
+  typechart: JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'typechart.json'), 'utf8')),
+  natures: JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'natures.json'), 'utf8')),
+  meta: JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'meta.json'), 'utf8'))
+};
+function localType(l, t) { return (names[l] && names[l].type && names[l].type[t.toLowerCase()]) || t; }
+function localNature(l, id) {
+  var n = names[l] && names[l].nature && names[l].nature[id.toLowerCase()];
+  return n || (id.charAt(0).toUpperCase() + id.slice(1));
+}
 
 // --- fs helpers ---
 function rmrf(p) { if (fs.existsSync(p)) fs.rmSync(p, { recursive: true, force: true }); }
@@ -122,6 +135,9 @@ ${hreflangs}
     </div>
   </div>
 </header>
+<nav class="subnav"><div class="wrap">
+  <a href="/${lang}/${t.slug}/" aria-current="true">${esc(t.nav.calculator)}</a>${resourcesNav(lang)}
+</div></nav>
 
 <main class="wrap">
   <section class="hero">
@@ -178,13 +194,23 @@ ${hreflangs}
     <nav class="langs" aria-label="${esc(t.footer.langLabel)}">${langMenu}</nav>
     <p class="muted">${esc(t.footer.disclaimer)}</p>
     <p class="muted">${esc(t.footer.data)} (Reg ${esc(cfg.regulation)})</p>
+    <nav class="langs">${resourcesNav(lang)}</nav>
     <p><a href="/${lang}/${legal[lang].slug}/">${esc(legal[lang].nav)}</a> · <a href="/${lang}/${legal[lang].slug}/#contacto">${esc(legal[lang].contactNav)}</a></p>
   </div>
 </footer>
 
-<script>window.LANG=${JSON.stringify(lang)};window.DATA_BASE="/data/";window.I18N=${I18N_JSON};</script>
+<div class="consent" id="consent" hidden>
+  <span>${esc(t.consent.text)} <a href="/${lang}/${legal[lang].slug}/">${esc(t.consent.more)}</a></span>
+  <span class="consent-actions">
+    <button class="btn" id="consentReject">${esc(t.consent.reject)}</button>
+    <button class="btn primary" id="consentAccept">${esc(t.consent.accept)}</button>
+  </span>
+</div>
+
+<script>window.LANG=${JSON.stringify(lang)};window.DATA_BASE="/data/";window.ADSENSE_CLIENT=${JSON.stringify(cfg.adsenseClient || '')};window.I18N=${I18N_JSON};</script>
 <script src="/assets/js/engine.js" defer></script>
 <script src="/assets/js/app.js" defer></script>
+<script src="/assets/js/consent.js" defer></script>
 <script>
   // wire header swap button to app once loaded
   document.addEventListener('DOMContentLoaded',function(){
@@ -243,6 +269,128 @@ function legalHTML(lang) {
 </html>`;
 }
 
+// --- shared bits for cluster/legal pages ---
+const TYPE_COLORS = { Normal:'#9099a1',Fire:'#ff6b3d',Water:'#4d8fef',Electric:'#f7cf3a',Grass:'#5dbd5a',Ice:'#73cec0',Fighting:'#e0395a',Poison:'#a45dc4',Ground:'#dcb14a',Flying:'#8fa9f0',Psychic:'#ff6f97',Bug:'#9bbb2e',Rock:'#c7b67c',Ghost:'#6a6ab8',Dragon:'#5a72e0',Dark:'#5a5366',Steel:'#8ba9bd',Fairy:'#ef9bd6' };
+
+function resourcesNav(lang) {
+  const t = i18n[lang];
+  return `<a href="/${lang}/${t.cluster.types.slug}/">${esc(t.nav.types)}</a>` +
+         `<a href="/${lang}/${t.cluster.natures.slug}/">${esc(t.nav.natures)}</a>`;
+}
+
+function clusterHead(lang, slugKey, pageMeta) {
+  const t = i18n[lang];
+  const url = SITE + '/' + lang + '/' + pageMeta.slug + '/';
+  const hreflangs = cfg.languages.map((l) =>
+    `<link rel="alternate" hreflang="${i18n[l].hreflang}" href="${SITE}/${l}/${i18n[l].cluster[slugKey].slug}/">`
+  ).join('\n  ') + `\n  <link rel="alternate" hreflang="x-default" href="${SITE}/">`;
+  const langMenu = cfg.languages.map((l) =>
+    `<a href="/${l}/${i18n[l].cluster[slugKey].slug}/"${l===lang?' aria-current="true"':''}>${i18n[l].name}</a>`
+  ).join('');
+  return `<!doctype html>
+<html lang="${t.hreflang}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${esc(pageMeta.title)}</title>
+<meta name="description" content="${esc(pageMeta.description)}">
+<link rel="canonical" href="${url}">
+  ${hreflangs}
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="${esc(pageMeta.h1)}">
+<meta property="og:description" content="${esc(pageMeta.description)}">
+<meta property="og:url" content="${url}">
+<meta property="og:image" content="${SITE}/assets/og/og-${lang}.png">
+<meta name="theme-color" content="#0f1220">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+  <a class="brand" href="/${lang}/${t.slug}/"><span class="dot"></span> <span>Champions<b>Damage</b></span></a>
+  <div class="lang"><button class="lang-btn" id="langBtn">🌐 ${t.name} ▾</button>
+  <nav class="lang-menu" id="langMenu">${langMenu}</nav></div>
+</div></header>
+<nav class="subnav"><div class="wrap">
+  <a href="/${lang}/${t.slug}/">${esc(t.nav.calculator)}</a>${resourcesNav(lang)}
+</div></nav>`;
+}
+
+function clusterFoot(lang, pageMeta) {
+  const t = i18n[lang];
+  return `<p style="margin-top:24px"><a class="btn primary" href="/${lang}/${t.slug}/">${esc(pageMeta.back)} →</a></p>
+</main>
+<footer class="site-footer"><div class="wrap">
+  <p class="muted">${esc(t.footer.disclaimer)}</p>
+  <p><a href="/${lang}/${legal[lang].slug}/">${esc(legal[lang].nav)}</a></p>
+</div></footer>
+<script>document.getElementById('langBtn').addEventListener('click',function(e){e.stopPropagation();document.getElementById('langMenu').classList.toggle('open');});document.addEventListener('click',function(){document.getElementById('langMenu').classList.remove('open');});</script>
+</body></html>`;
+}
+
+// Type effectiveness chart page
+function typeChartHTML(lang) {
+  const t = i18n[lang];
+  const m = t.cluster.types;
+  const types = D.meta.types;
+  const cell = (v) => {
+    if (v === 0) return '<td class="e0" title="×0">0</td>';
+    if (v === 2) return '<td class="e2" title="×2">2</td>';
+    if (v === 0.5) return '<td class="e05" title="×0,5">½</td>';
+    return '<td class="e1"></td>';
+  };
+  const headCols = types.map((d) =>
+    `<th><abbr title="${esc(localType(lang, d))}" style="background:${TYPE_COLORS[d]}">${esc(localType(lang, d).slice(0,3))}</abbr></th>`
+  ).join('');
+  const rows = types.map((atk) => {
+    const cells = types.map((def) => cell(D.typechart[atk] ? D.typechart[atk][def] : 1)).join('');
+    return `<tr><th class="rowh"><span class="type" style="background:${TYPE_COLORS[atk]}">${esc(localType(lang, atk))}</span></th>${cells}</tr>`;
+  }).join('\n');
+  return clusterHead(lang, 'types', m) + `
+<main class="wrap content">
+  <h1>${esc(m.h1)}</h1>
+  <p>${m.intro}</p>
+  <div class="chart-wrap">
+    <table class="typechart">
+      <thead><tr><th class="rowh">${esc(m.rowLabel)}</th>${headCols}</tr></thead>
+      <tbody>
+${rows}
+      </tbody>
+    </table>
+  </div>
+  <ul class="legend">
+    <li><span class="sw e2"></span> ${esc(t.effectiveness.x2)}</li>
+    <li><span class="sw e05"></span> ${esc(t.effectiveness.x05)}</li>
+    <li><span class="sw e0"></span> ${esc(t.effectiveness.x0)}</li>
+  </ul>
+` + clusterFoot(lang, m);
+}
+
+// Natures table page
+function naturesHTML(lang) {
+  const t = i18n[lang];
+  const m = t.cluster.natures;
+  const order = ['hardy','lonely','brave','adamant','naughty','bold','docile','relaxed','impish','lax','timid','hasty','serious','jolly','naive','modest','mild','quiet','bashful','rash','calm','gentle','sassy','careful','quirky'];
+  const rows = order.map((id) => {
+    const n = D.natures[id];
+    const raises = n.plus ? t.stats[n.plus] : '<span class="muted">' + esc(m.neutral) + '</span>';
+    const lowers = n.minus ? t.stats[n.minus] : '<span class="muted">' + esc(m.neutral) + '</span>';
+    return `<tr><td><b>${esc(localNature(lang, id))}</b></td><td class="up">${raises}</td><td class="down">${lowers}</td></tr>`;
+  }).join('\n');
+  return clusterHead(lang, 'natures', m) + `
+<main class="wrap content">
+  <h1>${esc(m.h1)}</h1>
+  <p>${m.intro}</p>
+  <table class="natures">
+    <thead><tr><th>${esc(m.colNature)}</th><th>${esc(m.colRaises)}</th><th>${esc(m.colLowers)}</th></tr></thead>
+    <tbody>
+${rows}
+    </tbody>
+  </table>
+` + clusterFoot(lang, m);
+}
+
 // --- root language picker ---
 function rootHTML() {
   const links = cfg.languages.map((l) =>
@@ -298,7 +446,11 @@ function sitemap() {
   const legalSlug = (l) => SITE + '/' + l + '/' + legal[l].slug + '/';
   const entries = [];
   entries.push(`  <url>\n    <loc>${SITE}/</loc>\n    <changefreq>weekly</changefreq>\n  </url>`);
+  const typesSlug = (l) => SITE + '/' + l + '/' + i18n[l].cluster.types.slug + '/';
+  const naturesSlug = (l) => SITE + '/' + l + '/' + i18n[l].cluster.natures.slug + '/';
   cfg.languages.forEach((l) => entries.push(urlEntry(calcSlug(l), calcSlug)));
+  cfg.languages.forEach((l) => entries.push(urlEntry(typesSlug(l), typesSlug)));
+  cfg.languages.forEach((l) => entries.push(urlEntry(naturesSlug(l), naturesSlug)));
   cfg.languages.forEach((l) => entries.push(urlEntry(legalSlug(l), legalSlug)));
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${entries.join('\n')}\n</urlset>\n`;
 }
@@ -327,11 +479,14 @@ cfg.languages.forEach((l) => {
   console.log('  /' + l + '/' + i18n[l].slug + '/');
   writeFile(path.join(DIST, l, legal[l].slug, 'index.html'), legalHTML(l));
   console.log('  /' + l + '/' + legal[l].slug + '/');
+  writeFile(path.join(DIST, l, i18n[l].cluster.types.slug, 'index.html'), typeChartHTML(l));
+  writeFile(path.join(DIST, l, i18n[l].cluster.natures.slug, 'index.html'), naturesHTML(l));
+  console.log('  /' + l + '/' + i18n[l].cluster.types.slug + '/  +  /' + l + '/' + i18n[l].cluster.natures.slug + '/');
 });
 writeFile(path.join(DIST, 'index.html'), rootHTML());
 
 // assets
-['engine.js', 'app.js'].forEach((f) => cp(path.join(SRC, 'assets/js', f), path.join(DIST, 'assets/js', f)));
+['engine.js', 'app.js', 'consent.js'].forEach((f) => cp(path.join(SRC, 'assets/js', f), path.join(DIST, 'assets/js', f)));
 cp(path.join(SRC, 'assets/css/styles.css'), path.join(DIST, 'assets/css/styles.css'));
 writeFile(path.join(DIST, 'assets/favicon.svg'), faviconSVG());
 

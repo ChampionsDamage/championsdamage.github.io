@@ -108,5 +108,32 @@
     "disclaimer": "Outil non officiel créé par des fans. Pokémon et Pokémon Champions sont des marques de Nintendo, Game Freak et The Pokémon Company. Données de combat issues de sources publiques de la communauté.",
     "data": "Données : roster et mécaniques de la régulation en cours.",
     "langLabel": "Langue"
+  },
+  "nav": { "calculator": "Calculateur", "resources": "Ressources", "types": "Table des types", "natures": "Natures" },
+  "consent": {
+    "text": "Nous utilisons des cookies pour afficher des publicités et garder l'outil gratuit.",
+    "accept": "Accepter",
+    "reject": "Refuser",
+    "more": "En savoir plus"
+  },
+  "cluster": {
+    "types": {
+      "slug": "table-des-types",
+      "title": "Table des Types Pokémon Champions | Efficacité et Faiblesses",
+      "description": "Table des types complète de Pokémon Champions : efficacité, faiblesses et résistances. Voyez ce qui est super efficace, pas très efficace ou sans effet contre chaque type.",
+      "h1": "Table des types Pokémon Champions",
+      "intro": "Consultez la <strong>table des types</strong> complète : croisez le type de la capacité (lignes) avec le type du défenseur (colonnes) pour voir l'<strong>efficacité</strong>. Vert = super efficace (×2), rouge = pas très efficace (×0,5) et gris = sans effet (×0). C'est la base de chaque calcul de dégâts dans Champions.",
+      "rowLabel": "Capacité ↓ / Défense →",
+      "back": "Ouvrir le calculateur de dégâts"
+    },
+    "natures": {
+      "slug": "natures",
+      "title": "Natures Pokémon : tableau complet | Champions",
+      "description": "Toutes les natures Pokémon et comment elles modifient les statistiques (+10 % / −10 %). Tableau rapide pour choisir la meilleure nature dans Champions.",
+      "h1": "Natures Pokémon",
+      "intro": "Chaque <strong>nature</strong> augmente une statistique de 10 % et en diminue une autre de 10 % (les natures neutres ne changent rien). Bien choisir sa nature est essentiel pour maximiser les dégâts ou la vitesse. Voici le tableau complet.",
+      "colNature": "Nature", "colRaises": "Augmente (+10 %)", "colLowers": "Diminue (−10 %)", "neutral": "Neutre",
+      "back": "Ouvrir le calculateur de dégâts"
+    }
   }
 }

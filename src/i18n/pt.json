@@ -108,5 +108,32 @@
     "disclaimer": "Ferramenta não oficial feita por fãs. Pokémon e Pokémon Champions são marcas da Nintendo, Game Freak e The Pokémon Company. Dados de batalha baseados em fontes públicas da comunidade.",
     "data": "Dados: roster e mecânicas da regulação vigente.",
     "langLabel": "Idioma"
+  },
+  "nav": { "calculator": "Calculadora", "resources": "Recursos", "types": "Tabela de tipos", "natures": "Naturezas" },
+  "consent": {
+    "text": "Usamos cookies para exibir anúncios e manter a ferramenta gratuita.",
+    "accept": "Aceitar",
+    "reject": "Recusar",
+    "more": "Saiba mais"
+  },
+  "cluster": {
+    "types": {
+      "slug": "tabela-de-tipos",
+      "title": "Tabela de Tipos de Pokémon Champions | Efetividade e Fraquezas",
+      "description": "Tabela de tipos completa de Pokémon Champions: efetividade, fraquezas e resistências. Veja o que é super efetivo, pouco efetivo ou sem efeito contra cada tipo.",
+      "h1": "Tabela de tipos de Pokémon Champions",
+      "intro": "Consulte a <strong>tabela de tipos</strong> completa: cruze o tipo do golpe (linhas) com o tipo do defensor (colunas) para ver a <strong>efetividade</strong>. Verde = super efetivo (×2), vermelho = pouco efetivo (×0,5) e cinza = sem efeito (×0). É a base de todo cálculo de dano em Champions.",
+      "rowLabel": "Golpe ↓ / Defesa →",
+      "back": "Abrir a calculadora de dano"
+    },
+    "natures": {
+      "slug": "naturezas",
+      "title": "Naturezas de Pokémon: tabela completa | Champions",
+      "description": "Todas as naturezas de Pokémon e como modificam os atributos (+10 % / −10 %). Tabela rápida para escolher a melhor natureza em Champions.",
+      "h1": "Naturezas de Pokémon",
+      "intro": "Cada <strong>natureza</strong> aumenta um atributo em 10 % e reduz outro em 10 % (as naturezas neutras não mudam nada). Escolher bem a natureza é essencial para maximizar dano ou velocidade. Veja a tabela completa.",
+      "colNature": "Natureza", "colRaises": "Aumenta (+10 %)", "colLowers": "Reduz (−10 %)", "neutral": "Neutra",
+      "back": "Abrir a calculadora de dano"
+    }
   }
 }
