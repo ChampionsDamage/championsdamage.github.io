@@ -55,18 +55,6 @@ function cp(from, to) { fs.mkdirSync(path.dirname(to), { recursive: true }); fs.
 function writeFile(p, c) { fs.mkdirSync(path.dirname(p), { recursive: true }); fs.writeFileSync(p, c); }
 function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 
-// Minimal redirect page (for moved URLs): meta refresh + canonical + noindex + JS.
-function redirectStub(targetPath) {
-  const to = SITE + targetPath;
-  return `<!doctype html><html lang="es"><head><meta charset="utf-8">
-<title>ChampionsDamage</title>
-<link rel="canonical" href="${to}">
-<meta name="robots" content="noindex,follow">
-<meta http-equiv="refresh" content="0; url=${targetPath}">
-<script>location.replace(${JSON.stringify(targetPath)}+location.search+location.hash);</script>
-</head><body>→ <a href="${targetPath}">${to}</a></body></html>`;
-}
-
 // Tracking/verification tags injected into every <head>.
 // - GSC verification meta: cookieless.
 // - Cloudflare Web Analytics beacon: cookieless, no consent needed.
@@ -554,10 +542,6 @@ rmrf(DIST);
 cfg.languages.forEach((l) => {
   writeFile(path.join(DIST, l, 'index.html'), pageHTML(l));
   console.log('  /' + l + '/');
-  // legacy redirect: old descriptive calc slug -> /<lang>/
-  if (i18n[l].slug) {
-    writeFile(path.join(DIST, l, i18n[l].slug, 'index.html'), redirectStub('/' + l + '/'));
-  }
   writeFile(path.join(DIST, l, legal[l].slug, 'index.html'), legalHTML(l));
   console.log('  /' + l + '/' + legal[l].slug + '/');
   writeFile(path.join(DIST, l, i18n[l].cluster.types.slug, 'index.html'), typeChartHTML(l));
