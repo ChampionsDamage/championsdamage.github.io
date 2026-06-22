@@ -191,5 +191,6 @@ table.natures .up { color: var(--good); } table.natures .down { color: var(--bad
 
 /* consent banner */
 .consent { position: fixed; left:12px; right:12px; bottom:12px; z-index:50; background: var(--card); border:1px solid var(--line); box-shadow: var(--shadow); border-radius:12px; padding:12px 14px; display:flex; gap:12px; align-items:center; justify-content:space-between; flex-wrap:wrap; font-size:.88rem; }
+.consent[hidden] { display: none; }
 .consent-actions { display:flex; gap:8px; }
 @media(min-width:680px){ .consent { left:auto; max-width:520px; } }
