@@ -1,9 +1,8 @@
-/* Cookie consent + tag loader (GDPR/ePrivacy-friendly).
- * - No analytics/ads cookies are set or scripts loaded before consent.
- * - Accept and Reject are equally available; the site works either way.
- * - The choice is stored in localStorage (not a cookie) and can be changed
- *   any time via the footer "manage cookies" link (#cookieSettings).
- * - GA4 is loaded with anonymized IP, only after Accept.
+/* Cookie consent (GDPR/ePrivacy) with Google Consent Mode v2.
+ * GA4 is loaded in <head> with consent defaulting to DENIED (no cookies, cookieless
+ * modeled pings only). This script flips consent to GRANTED when the visitor accepts,
+ * and keeps it DENIED on reject. AdSense (if configured) is only injected on accept.
+ * The choice is stored in localStorage and can be changed via the footer link.
  */
 (function () {
   'use strict';
@@ -13,6 +12,14 @@
   var manage = document.getElementById('cookieSettings');
   var KEY = 'cd_consent';
 
+  function grantConsent() {
+    if (window.gtag) {
+      window.gtag('consent', 'update', {
+        ad_storage: 'granted', ad_user_data: 'granted',
+        ad_personalization: 'granted', analytics_storage: 'granted'
+      });
+    }
+  }
   function loadAds() {
     if (!CLIENT) return;
     var s = document.createElement('script');
@@ -21,20 +28,7 @@
     s.crossOrigin = 'anonymous';
     document.head.appendChild(s);
   }
-  function loadGA4() {
-    if (!GA4 || window.__ga4Loaded) return;
-    window.__ga4Loaded = true;
-    var s = document.createElement('script');
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(GA4);
-    document.head.appendChild(s);
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { window.dataLayer.push(arguments); }
-    window.gtag = gtag;
-    gtag('js', new Date());
-    gtag('config', GA4, { anonymize_ip: true });
-  }
-  function loadAll() { loadAds(); loadGA4(); }
+  function accept() { grantConsent(); loadAds(); }
 
   function getChoice() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
   function setChoice(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
@@ -42,20 +36,18 @@
   function hide() { if (banner) banner.hidden = true; }
 
   // "Manage cookies" footer link → re-open the banner to change/withdraw consent.
-  if (manage) {
-    manage.addEventListener('click', function (e) { e.preventDefault(); show(); });
-  }
+  if (manage) manage.addEventListener('click', function (e) { e.preventDefault(); show(); });
 
-  // Nothing to consent to → no banner, no manage link.
+  // Nothing configured → no banner.
   if (!CLIENT && !GA4) { hide(); if (manage) manage.style.display = 'none'; return; }
 
-  var accept = document.getElementById('consentAccept');
-  var reject = document.getElementById('consentReject');
-  if (accept) accept.addEventListener('click', function () { setChoice('accept'); hide(); loadAll(); });
-  if (reject) reject.addEventListener('click', function () { setChoice('reject'); hide(); });
+  var aBtn = document.getElementById('consentAccept');
+  var rBtn = document.getElementById('consentReject');
+  if (aBtn) aBtn.addEventListener('click', function () { setChoice('accept'); hide(); accept(); });
+  if (rBtn) rBtn.addEventListener('click', function () { setChoice('reject'); hide(); });
 
   var choice = getChoice();
-  if (choice === 'accept') { hide(); loadAll(); }
-  else if (choice === 'reject') { hide(); }
-  else { show(); }
+  if (choice === 'accept') { hide(); accept(); }      // returning visitor who accepted
+  else if (choice === 'reject') { hide(); }           // stays denied (cookieless)
+  else { show(); }                                    // first visit → ask
 })();

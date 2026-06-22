@@ -62,6 +62,21 @@ function esc(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').re
 function trackingTags() {
   var out = '';
   if (cfg.gscVerification) out += `\n<meta name="google-site-verification" content="${esc(cfg.gscVerification)}">`;
+  // Google Analytics 4 with Consent Mode v2: the tag loads on every page (so it is
+  // detectable and can send cookieless "modeled" data), but consent defaults to
+  // DENIED — no analytics/ads cookies are written until the visitor accepts the
+  // banner, which calls gtag('consent','update',...). Brief-compliant.
+  if (cfg.ga4Id) {
+    const id = cfg.ga4Id;
+    out += `
+<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(id)}"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:500});
+gtag('js',new Date());
+gtag('config','${esc(id)}');
+</script>`;
+  }
   if (cfg.cfAnalyticsToken) out += `\n<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "${esc(cfg.cfAnalyticsToken)}"}'></script>`;
   return out;
 }
